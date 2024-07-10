@@ -1,1 +1,7 @@
-<h1>Welcome to Fullybeyond</h1>
+<svelte:head>
+  <title>FullyBeyond</title>
+</svelte:head>
+
+<main>
+  <h1>Welcome to FullyBeyond</h1>
+</main>
