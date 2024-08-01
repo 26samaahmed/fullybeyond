@@ -38,6 +38,9 @@
 
 	<div id="landing-center">
 		<img src={sunset} alt="Sunset" id="sunset" />
+		<h2 id="center-title">FullyBeyond: Across the Pond</h2>
+		<h3 id="description1">CSUF's First Designathon</h3>
+		<h3 id="description2">November 9th - 10th</h3>
 		<img src={hills} alt="Hills" id="hills" />
     <img src={grass} alt="Grass" id="grass" />
     <img src={side_leaves} alt="Side Leaves" id="side-leaves" />
@@ -53,18 +56,18 @@
 
 <style>
   main {
-    background: linear-gradient(180deg, rgb(255, 255, 255), rgb(120, 191, 206));
+		font-family: "M PLUS Rounded 1c", sans-serif;
+		font-weight: 900;
     /* Ensure the main tag takes the full height of the component */
     height: 100%;
     width: 100%;
   }
-
-
+	
+	
 	ul {
 		border-radius: 80px;
 		background-color: rgb(255, 242, 223);
 		border: solid 3px rgb(183, 93, 119);
-		font-family: 'Inter', sans-serif;
 		list-style-type: none;
 		width: 65%;
 		margin: 0 auto;
@@ -103,8 +106,27 @@
 		margin-right: auto;
 		top: 0;
 		left: 0;
-
 		z-index: 0;
+	}
+
+	#center-title, #description1, #description2 {
+		position: absolute;
+		top: 16%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 50px;
+		color: rgb(255, 232, 197);
+		z-index: 1;
+	}
+
+	#description1 {
+		top: 23%;
+		font-size: 30px;
+	}
+
+	#description2 {
+		top: 28%;
+		font-size: 30px;
 	}
 
 	#hills {
@@ -118,24 +140,24 @@
 		z-index: 1;
 	}
 
-  #side-leaves {
-    width: 30%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    top: 0;
-    right: 0;
-    position: absolute;
-    z-index: 2;
-  }
-  
-  #grass {
+	#grass {
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     bottom: -200px;
     left: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  #side-leaves {
+    width: 32%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    right: 0;
     position: absolute;
     z-index: 3;
   }
