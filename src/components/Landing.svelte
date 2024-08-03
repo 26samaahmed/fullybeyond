@@ -1,8 +1,5 @@
 <script>
-  import logo from '$lib/Assets/Landing/logo.png';
-  import instagram from '$lib/Assets/Landing/instagram.png';
-  import tiktok from '$lib/Assets/Landing/tiktok.png';
-  import linkedin from '$lib/Assets/Landing/linkedin.png';
+	import NavBar from './NavBar.svelte';
   import sunset from '$lib/Assets/Landing/sunset.png';
   import hills from '$lib/Assets/Landing/hills_background.png';
   import grass from '$lib/Assets/Landing/layered_green.png';
@@ -13,51 +10,37 @@
 </script>
 
 <svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
-		rel="stylesheet"
-	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </svelte:head>
 
 <main>
-	<ul id="nav-bar">
-		<img id="nav-logo" src={logo} alt="FullyBeyond" />
-		<li id="fullybeyond-text">FullyBeyond</li>
-		<li class="divider"></li>
-		<li>Home</li>
-		<li>Event</li>
-		<li>About</li>
-		<li>FAQ</li>
-		<li class="divider"></li>
-		<img src={tiktok} alt="TikTok" class="social-media" />
-		<img src={instagram} alt="Instagram" class="social-media" />
-		<img src={linkedin} alt="LinkedIn" class="social-media" />
-	</ul>
-
+	<NavBar />
 	<div id="landing-center">
 		<img src={sunset} alt="Sunset" id="sunset" />
 		<h2 id="center-title">FullyBeyond: Across the Pond</h2>
 		<h3 id="description1">CSUF's First Designathon</h3>
 		<h3 id="description2">November 9th - 10th</h3>
+		<button id="apply-now">Apply Now!</button>
+		<button id="sponsor-us">Sponsor Us!</button>
 		<img src={hills} alt="Hills" id="hills" />
     <img src={grass} alt="Grass" id="grass" />
     <img src={side_leaves} alt="Side Leaves" id="side-leaves" />
 
+
     <div id="lower-gradient-waves">
-      <!--
+		<!--
       <img src={dark_waves} alt="Dark Waves" id="dark-waves" />
-      -->
       <img src={light_waves} alt="Light Waves" id="light-waves" />
     </div>
+		-->
 	</div>
 </main>
 
 <style>
   main {
 		font-family: "M PLUS Rounded 1c", sans-serif;
-		font-weight: 900;
     /* Ensure the main tag takes the full height of the component */
     height: 100%;
     width: 100%;
@@ -114,19 +97,47 @@
 		top: 16%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		font-size: 50px;
+		font-size: 40px;
 		color: rgb(255, 232, 197);
 		z-index: 1;
+		font-weight: 900;
+		-webkit-text-stroke: 2px rgb(169, 82, 113);
 	}
 
 	#description1 {
 		top: 23%;
-		font-size: 30px;
+		font-size: 28px;
+		-webkit-text-stroke: 1.8px rgb(169, 82, 113);
 	}
 
 	#description2 {
 		top: 28%;
-		font-size: 30px;
+		font-size: 28px;
+		-webkit-text-stroke: 1.8px rgb(169, 82, 113);
+	}
+
+	button {
+		position: absolute;
+		top: 35%;
+		transform: translate(-50%, -50%);
+		background-color: rgb(255, 232, 197);
+		color: rgb(169, 82, 113);
+		border: 4px rgb(224, 162, 70) solid;
+		border-radius: 25px;
+		padding: 10px 30px;
+		font-size: 20px;
+		font-weight: 400;
+		cursor: pointer;
+		z-index: 1;
+		margin: 25px;
+	}
+
+	#apply-now {
+		left: 40%;
+	}
+
+	#sponsor-us {
+		right: 28%;
 	}
 
 	#hills {
@@ -182,16 +193,17 @@
     position: absolute;
     z-index: 5;
   }
-  */
+
 
   #light-waves {
     width: 100%;
     display: block;
-    bottom: 300px;
+    bottom: 290px;
     left: 0;
     position: absolute;
     z-index: 6;
   }
+	  */
   
 
 </style>
