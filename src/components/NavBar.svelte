@@ -20,3 +20,35 @@
     <img src={linkedin} alt="LinkedIn" class="social-media" />
   </ul>
 </main>
+
+<style>
+  	ul {
+		border-radius: 80px;
+		background-color: rgb(255, 242, 223);
+		border: solid 3px rgb(183, 93, 119);
+		list-style-type: none;
+		width: 65%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 10px;
+		font-size: 20px;
+	}
+
+	li {
+		display: inline;
+		margin: 25px;
+	}
+
+	#nav-logo,
+	.social-media {
+		width: 30px;
+	}
+
+	.divider {
+		border: 1px solid rgb(217, 217, 217);
+	}
+
+	#fullybeyond-text {
+		font-weight: 800;
+	}
+</style>
