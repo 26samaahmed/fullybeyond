@@ -19,52 +19,51 @@
 <main>
 	<!--<NavBar />-->
 	<div class="relative">
-		<img src={sunset} alt="Sunset" class="w-3/4 block ml-auto mr-auto mt-32 top-0 left-0 z-0" />
+		<img src={sunset} alt="Sunset" class="w-3/4 block ml-auto mr-auto mt-24 top-0 left-0 z-0" />
 		<div id="center-introduction" class="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center text-[#FFE8C5] top-44">
 			<span class="sm:text-sm md:text-lg lg:text-5xl z-10 font-extrabold">
 					FullyBeyond: Across the Pond
 			</span>
-			<span class="sm:text-sm md:text-lg lg:text-4xl z-10 font-black mt-4">
+			<span class="sm:text-sm md:text-lg lg:text-3xl z-10 font-black mt-4">
 					CSUF's First Designathon
 			</span>
-			<span class="sm:text-sm md:text-lg lg:text-4xl z-10 font-black mt-4">
+			<span class="sm:text-sm md:text-lg lg:text-3xl z-10 font-black mt-4">
 					November 9th - 10th
 			</span>
+			<button class="absolute text-xl transform -translate-x-1/2 bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 h-14 top-52 font-light">Apply Now!</button>
 		</div>
 
-		<img src={hills} alt="Hills" class="w-full block ml-auto mr-auto left-0 absolute z-10 top-28"/>
+		<img src={hills} alt="Hills" class="w-full block ml-auto mr-auto left-0 absolute z-10 top-24" />
 		<img src={grass} alt="Grass" class="w-full block ml-auto mr-auto bottom-[-155px] left-0 absolute z-10" />
 		<img src={side_leaves} alt="Side Leaves" class="block w-2/5 ml-auto mr-auto top-0 right-0 absolute z-30" />
 		
 		<img src={dark_waves} alt="Dark Waves" class="w-full block absolute left-0 z-10 bottom-0" />
 		<img src={light_waves} alt="Light Waves" class="w-full block absolute left-0 z-10 bottom-0" />
-		<div class="absolute	bg-[#78BFCE] left-0 w-full h-full z-10">
-			<div class="absolute bg-[#78BFCE] left-0 w-full  h-full z-0">
-				<div class="flex justify-center space-x-20 mt-20 relative">
-					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 z-20 relative">
-						<span class="text-[#000000] text-3xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">NOV. 9 - NOV.10</span>
-						<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-2 z-10" />
+
+		<div class="absolute bg-[#78BFCE] left-0 w-full h-full z-10">
+			<div class="absolute bg-[#78BFCE] left-0 w-full h-full z-0">
+					<div class="flex justify-center space-x-20 mt-20">
+							<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+									<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">DATE</p>
+									<span class="text-[#000000] text-3xl font-extrabold absolute">NOV. 9 - NOV.10</span>
+									<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3 left-1/2 transform -translate-x-1/2" />
+							</div>
+							<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+									<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">DURATION</p>
+									<span class="text-[#000000] text-3xl font-extrabold absolute">24 HOURS</span>
+									<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3 left-1/2 transform -translate-x-1/2" />
+							</div>
+							<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+									<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">LOCATION</p>
+									<span class="text-[#000000] text-3xl font-extrabold absolute">VIRTUAL</span>
+									<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3 left-1/2 transform -translate-x-1/2" />
+							</div>
 					</div>
-					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 z-20 relative">
-						<span class="text-[#000000] text-3xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">24 HOURS</span>
-						<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-2 z-10" />
-					</div>
-					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 z-20 relative">
-						<span class="text-[#000000] text-3xl font-bold absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">VIRTUAL</span>
-						<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-2 z-10" />
-					</div>
-				</div>
 			</div>
-			
 		</div>
+	
 	</div>
 
-
-
-		<!--
-		<button id="apply-now">Apply Now!</button>
-		<button id="sponsor-us">Sponsor Us!</button>
-		-->
 </main>
 
 <style>
@@ -76,34 +75,7 @@
   }
 
 	#center-introduction {
-		-webkit-text-stroke: 2px rgb(169, 82, 113);
+		-webkit-text-stroke: 1.7px rgb(169, 82, 113);
 	}
-
-/*
-	button {
-		position: absolute;
-		top: 35%;
-		transform: translate(-50%, -50%);
-		background-color: rgb(255, 232, 197);
-		color: rgb(169, 82, 113);
-		border: 4px rgb(224, 162, 70) solid;
-		border-radius: 25px;
-		padding: 10px 30px;
-		font-size: 20px;
-		font-weight: 400;
-		cursor: pointer;
-		z-index: 1;
-		margin: 25px;
-	}
-
-	#apply-now {
-		left: 40%;
-	}
-
-	#sponsor-us {
-		right: 28%;
-	}
-
-*/
 
 </style>
