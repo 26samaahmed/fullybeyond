@@ -28,12 +28,9 @@
     </div>
 
     
-
+<!-- 
     <img class= "lotus-img" src="{lotus}" alt="lotus-flower"/> 
     <h1 class="abt">What Can We Look Forward To?</h1>
-
-    <!-- <img class="lily-pad"   src="{lilly_pad}" alt="lilly-pad-img">
-    <img class="leaves"   src="{leaves2}" alt="leaves-img"> -->
 
     <div class="container">
         <img class="lily-pad"   src="{lilly_pad}" alt="lilly-pad-img">
@@ -41,10 +38,11 @@
         <div class="video-section">
             <p>place-holder</p>
         </div>
-    </div>
+    </div> -->
   
 
     <!-- 3 colummn grid template -->
+    <h1 class="abt">What Can We Look Forward To?</h1>
      <div class="expectation-wrapper">
         <div class="column-card">
             <img src="" alt="">
@@ -82,7 +80,7 @@
 
     .abt {
         color: #6BD1A9;
-        font-size: 7rem;
+        font-size: 4rem;
         font-weight: 900;
         text-transform: uppercase;
         -webkit-text-stroke-width: 0.5px;
@@ -165,7 +163,7 @@
         grid-template-columns: repeat(3,1fr);
         gap: 10px; 
         padding: 30px;
-        /* width: 30%; */
+        width: 50%;
         height: 300px;
        
     }
