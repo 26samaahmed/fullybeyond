@@ -13,9 +13,10 @@
     import ajpfp from '../lib/Assets/Team/AJ.jpeg';
     import yuliepf from '../lib/Assets/Team/yulie.jpeg';
     import jefferypf from '../lib/Assets/Team/jeffrey.jpeg';
-    import kristenpf from '../lib/Assets/Team/kristen.jpeg';
+    import kristenpf from '../lib/Assets/Team/kristen.jpg';
     import tanishapf from '../lib/Assets/Team/Tanisha.png';
     import samapf from '../lib/Assets/Team/sama.jpg';
+    import loripf from '../lib/Assets/Team/lori.jpg';
 
     let team = [
       { name: 'Yulie Ledesma', role: 'Marketing', image: yuliepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
@@ -24,7 +25,7 @@
       { name: 'Kristen Portillo', role: 'Director', image: kristenpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Tanishaa Naik', role: 'Marketing', image: tanishapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Sama Ahmed', role: 'Web Dev Lead', image: samapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Lori Cha', role: 'Web Dev & Marketing', image: blankpfp, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Lori Cha', role: 'Web Dev & Marketing', image: loripf, leafImageLeft: leafLeft, leafImageRight: leafRight},
     ];
 </script>
 
