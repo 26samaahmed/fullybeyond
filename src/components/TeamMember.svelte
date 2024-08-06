@@ -20,7 +20,7 @@
         <img class="absolute w-32 h-32 z-0 bottom-0 right-0 transform translate-x-8 translate-y-2" src={leaf_image_right} alt="leaf right" />
     </div>
     <h3 class="mt-2 text-3xl font-semibold">{name}</h3>
-    <p class="text-3xl text-black-500 font-semibold">{role}</p>
+    <p class="text-3xl text-black-500">{role}</p>
 </div>
 
 <style>
