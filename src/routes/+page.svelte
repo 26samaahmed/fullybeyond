@@ -6,3 +6,9 @@
   <title >FullyBeyond</title>
 
 </svelte:head>
+
+<main>
+  <h1 class="text-3xl" >Welcome to FullyBeyond</h1>
+  <EventDetails></EventDetails>
+  <Awards></Awards>
+</main>
