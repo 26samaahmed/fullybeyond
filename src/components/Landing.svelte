@@ -20,7 +20,7 @@
 </svelte:head>
 
 <main>
-	<!--<NavBar />-->
+	<NavBar />
 	<div class="relative">
     <img src={sunset} alt="Sunset" class="w-3/4 block mx-auto mt-24 top-0 left-0 z-0" />
     
@@ -42,37 +42,37 @@
 
 		<img src={hills} alt="Hills" class="w-full block ml-auto mr-auto left-0 absolute z-10 top-28" />
 		<img src={grass} alt="Grass" class="w-full block ml-auto mr-auto bottom-[-155px] left-0 absolute z-10" />
-		<img src={side_leaves} alt="Side Leaves" class="block w-2/5 ml-auto mr-auto top-0 right-0 absolute z-30" />
-		
-		<div class="absolute w-full flex flex-col items-center">
-			<img src={dark_waves} alt="Dark Waves" class="w-full block absolute left-0 z-10 bottom-0" />
-			<img src={light_waves} alt="Light Waves" class="w-full block absolute left-0 z-10 bottom-0" />
-			<img src={lotus_on_lilly_pad} alt="Lotus on Lilly Pad" class="w-40 absolute top-0 z-20" />
-			<img src={lotus_on_lilly_pad2} alt="Lotus on Lilly Pad" class="w-40 absolute top-0 z-20" />
-		</div>
+		<img src={side_leaves} alt="Side Leaves" class="block w-1/3 ml-auto mr-auto top-24 right-0 absolute z-30" />
+
 
 		<div class="absolute bg-[#78BFCE] left-0 w-full h-full z-10">
-				<div class="flex justify-center space-x-20 mt-20">
+			<div class="absolute w-full grid items-center">
+				<img src={dark_waves} alt="Dark Waves" class="w-full block absolute left-0 z-10" />
+				<img src={light_waves} alt="Light Waves" class="w-full block absolute left-0 z-10" />
+				<img src={lotus_on_lilly_pad2} alt="Lotus on Lilly Pad" class="w-56 absolute z-20 bottom-0 left-24" />
+				<img src={lotus_on_lilly_pad} alt="Lotus on Lilly Pad" class="w-56 absolute z-20 bottom-0 right-96" />
+			</div>
 
-						<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
-								<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">DATE</p>
-								<span class="text-[#000000] text-3xl font-extrabold absolute">NOV. 9 - NOV.10</span>
-								<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
-						</div>
+			<div class="flex justify-center space-x-20 mt-20">
+					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+							<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">DATE</p>
+							<span class="text-[#000000] text-3xl font-extrabold absolute">NOV. 9 - NOV.10</span>
+							<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
+					</div>
 
-						<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
-								<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">DURATION</p>
-								<span class="text-[#000000] text-3xl font-extrabold absolute">24 HOURS</span>
-								<img src={opposite_lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
-						</div>
+					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+							<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">DURATION</p>
+							<span class="text-[#000000] text-3xl font-extrabold absolute">24 HOURS</span>
+							<img src={opposite_lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
+					</div>
 
-						<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
-								<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">LOCATION</p>
-								<span class="text-[#000000] text-3xl font-extrabold absolute">VIRTUAL</span>
-								<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
-						</div>
-						
-				</div>
+					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+							<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">LOCATION</p>
+							<span class="text-[#000000] text-3xl font-extrabold absolute">VIRTUAL</span>
+							<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
+					</div>
+					
+			</div>
 		</div>
 	</div>
 </main>

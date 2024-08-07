@@ -16,9 +16,11 @@
     <img id="nav-logo" src={logo} alt="FullyBeyond" />
     <li id="fullybeyond-text">FullyBeyond</li>
     <li class="divider"></li>
+
     {#each navBar as { name, link }}
-		<li><a href={link}>{name}</a></li>
+			<li><a href={link}>{name}</a></li>
 		{/each}
+		
     <li class="divider"></li>
     <img src={tiktok} alt="TikTok" class="social-media" />
     <img src={instagram} alt="Instagram" class="social-media" />
@@ -33,6 +35,8 @@
 		border: solid 3px rgb(183, 93, 119);
 		list-style-type: none;
 		width: 65%;
+		height: 70px;
+		position: relative;
 		margin: 0 auto;
 		text-align: center;
 		padding: 10px;
