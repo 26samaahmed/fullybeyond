@@ -3,6 +3,12 @@
   import instagram from '$lib/Assets/Landing/instagram.png';
   import tiktok from '$lib/Assets/Landing/tiktok.png';
   import linkedin from '$lib/Assets/Landing/linkedin.png';
+	export let navBar = [
+		{ name: "Home", link: "/" },
+		{ name: "Event", link: "/event" },
+		{ name: "About", link: "/about" },
+		{ name: "FAQ", link: "/faq" }
+	];
 </script>
 
 <main>
@@ -10,10 +16,9 @@
     <img id="nav-logo" src={logo} alt="FullyBeyond" />
     <li id="fullybeyond-text">FullyBeyond</li>
     <li class="divider"></li>
-    <li>Home</li>
-    <li>Event</li>
-    <li>About</li>
-    <li>FAQ</li>
+    {#each navBar as { name, link }}
+		<li><a href={link}>{name}</a></li>
+		{/each}
     <li class="divider"></li>
     <img src={tiktok} alt="TikTok" class="social-media" />
     <img src={instagram} alt="Instagram" class="social-media" />
