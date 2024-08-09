@@ -52,20 +52,20 @@
 				<img src={lotus_on_lilly_pad} alt="Lotus on Lilly Pad" class="w-56 absolute z-20 bottom-0 right-96" />
 			</div>
 
-			<div class="flex justify-center space-x-20 mt-20">
-					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+			<div class="flex md:flex-row sm:flex-col justify-center space-x-20 mt-20">
+					<div class="border-dashed border-8 border-[#89CAD8] md:w-80 h-52 relative flex items-center justify-center">
 							<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">DATE</p>
 							<span class="text-[#000000] text-3xl font-extrabold absolute">NOV. 9 - NOV.10</span>
 							<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
 					</div>
 
-					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+					<div class="border-dashed border-8 border-[#89CAD8] md:w-80 h-52 relative flex items-center justify-center">
 							<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">DURATION</p>
 							<span class="text-[#000000] text-3xl font-extrabold absolute">24 HOURS</span>
 							<img src={opposite_lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
 					</div>
 
-					<div class="border-dashed border-8 border-[#89CAD8] w-80 h-52 relative flex items-center justify-center">
+					<div class="border-dashed border-8 border-[#89CAD8] md:w-80 h-52 relative flex items-center justify-center">
 							<p class="bg-[#CDF6FF] text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">LOCATION</p>
 							<span class="text-[#000000] text-3xl font-extrabold absolute">VIRTUAL</span>
 							<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3" />
