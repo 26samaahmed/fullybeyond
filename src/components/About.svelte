@@ -2,6 +2,11 @@
     import lotus from "../lib/Assets/About/lotus.png"
     import leaves2 from "../lib/Assets/Expectations/leaves2.png"
     import lilly_pad from "../lib/Assets/Expectations/lilly_pad.png"
+    import fully_the_frog_fly from  "../lib/Assets/FAQ/fully_the_frog_fly.png"
+    import right_mini_frog  from "../lib/Assets/FAQ/right_mini_frog.png"
+    import funna from "../lib/Assets/EventDetails/funna.png"
+    import fully_once_the_frog from "../lib/Assets/EventDetails/fully_once_the_frog.png"
+    import left_mini_frog from "../lib/Assets/FAQ/left_mini_frog.png"
 </script>
 
 <main>
@@ -42,23 +47,24 @@
   
 
     <!-- 3 colummn grid template -->
+    <img class= "lotus-img" src="{lotus}" alt="lotus-flower"/> 
     <h1 class="abt">What Can We Look Forward To?</h1>
      <div class="expectation-wrapper">
         <div class="column-card">
-            <img src="" alt="">
+            <!-- <img class="fully-froggy" src="{fully_the_frog_fly}" alt=""> -->
+            <img class="fully-froggy" src="{left_mini_frog}" alt="">
             <p><span>challenge and climb with </span>fellow designers</p>
         </div>
         <div class="column-card">
-            <img src="" alt="">
-
+            <img class="fully-froggy3" src="{fully_once_the_frog}" alt="">
             <p> <span>clash for top prices from our </span>sponsors</p>
 
         </div>
         <div class="column-card">
-            <img src="" alt="">
+            <img class="fully-froggy2" src="{funna}" alt="">
             <p> <span>get industry feedbacks from</span> mentors</p>
         </div>
-     </div>
+    </div>
     
 </main>
 
@@ -83,7 +89,7 @@
         font-size: 4rem;
         font-weight: 900;
         text-transform: uppercase;
-        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color:#1C8B82 ;
     }
 
@@ -104,22 +110,27 @@
       width: 80px;
     }
 
-    .container {
-        position: relative; 
+    .fully-froggy {
+        width: 70%;
+        height: 50%;
+        padding: 40px  ;
     }
 
-    .lily-pad {
-        /* position: absolute; */
-        bottom: 10px;
-        right: 16px;
-    }   
+    .fully-froggy2{
+        width: 70%;
+        height: 50%;
+        padding: 40px  ;
+    }
+
+    .fully-froggy3{
+        width: 70%;
+        height: 50%;
+        padding: 40px  ;
+    }
+
+
+      
    
-    .leaves{
-        /* position: absolute; */
-        top: 10px;
-        right: 16px;
-
-    }
     .first-section {
         display: flex;
         justify-content: center;
@@ -149,42 +160,36 @@
         margin: 20px;
     }
 
-    .video-section {
-        background-color: white;
-        /* top left right bottom */
-        border: 5px solid #6ED5A6;
-        padding: 10rem;
-        border-radius: 40px;
-        height: 100px;
-        width: 100px;
-    }
+   
     .expectation-wrapper {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 10px; 
+        gap: 100px; 
         padding: 30px;
         width: 50%;
         height: 300px;
        
     }
-
-
+    
+    
 
     .column-card {
         background-color: white;
         border: 3px solid #6ED5A6;
         border-radius: 10px;
+        width: 130%;
     }
+
     .column-card p {
         margin: 0;
         color: #4E7411;
-        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color:#6ED5A6;
     }
 
     span {
         color: white;
-        -webkit-text-stroke-width: 0.8px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color:#6ED5A6;
         padding: 5px;
     }
