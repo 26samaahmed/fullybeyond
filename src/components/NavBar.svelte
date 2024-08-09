@@ -26,12 +26,31 @@
 </script>
 
 <main>
-		<nav class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center bg-[#FFF2DF] rounded-3xl border-[#B75D77] border-2">
+		<nav class="container px-6 py-3 w-2/3 mx-auto md:flex md:justify-between md:items-center bg-[#FFF2DF] rounded-3xl border-[#B75D77] border-2">
 			<div class="flex items-center justify-between">
-				<div>
-					<a href="/" class="text-2xl font-bold text-gray-800 md:text-3xl">
-						<img src={logo} alt="Fully Beyond" class="w-6" />
+				<div class="flex items-center">
+					<a href="/" class="text-2xl font-bold md:text-3xl px-3">
+						<img src={logo} alt="Fully Beyond" class="w-8" />
 					</a>
+					<h1 class="font-extrabold md:text-2xl px-3">Fully Beyond</h1>
+					<div class="hidden md:flex md:border-[#D9D9D9] md:border-solid md:border-2 md:h-7 md:rounded mr-12"></div>
+
+					<!--Show the nav bar items here but hide them on mobile since they show when I click on the burger menu-->
+					<div class="hidden md:flex md:items-center md:space-x-10 px-3">
+						{#each navBar as item}
+						<a href={item.link} class="font-medium text-xl hover:text-gray-400">{item.name}</a>
+						{/each}
+					</div>
+
+					<div class="hidden md:flex md:border-[#D9D9D9] md:border-solid md:border-2 md:h-7 md:rounded ml-12"></div>
+
+					<div class="hidden md:flex items-center space-x-4 px-3">
+						{#each socialMedia as item}
+						<a href={item.link} target="_blank">
+							<img src={item.icon} alt={item.name} class="w-8" />
+						</a>
+						{/each}
+					</div>
 				</div>
 
 				<!-- Mobile menu button -->
@@ -64,3 +83,4 @@
 				</div>
 		</nav>
 </main>
+

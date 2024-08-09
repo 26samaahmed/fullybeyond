@@ -1,3 +1,9 @@
+<svelte:head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+</svelte:head>
+
 <script>
 	import NavBar from './NavBar.svelte';
   import sunset from '$lib/Assets/Landing/sunset.png';
@@ -10,19 +16,12 @@
 	import lotus_on_lilly_pad2 from '$lib/Assets/Landing/lotus_on_lilly_pad2.png';
 	import lilly_pad from '$lib/Assets/Landing/lilly_pad.png';
 	import opposite_lilly_pad from '$lib/Assets/Landing/opposite_lilly_pad.png';
-
 </script>
-
-<svelte:head>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
-</svelte:head>
 
 <main>
 	<NavBar />
 	<div class="relative">
-    <img src={sunset} alt="Sunset" class="w-3/4 block mx-auto mt-24 top-0 left-0 z-0" />
+    <img src={sunset} alt="Sunset" class="w-3/4 block mx-auto mt-16 top-0 left-0 z-0" />
     
     <div id="center-introduction" class="absolute w-full flex flex-col items-center text-[#FFE8C5] top-44">
         <span class="sm:text-sm md:text-lg lg:text-5xl z-10 font-extrabold text-center">
