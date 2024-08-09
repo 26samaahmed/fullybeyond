@@ -51,18 +51,17 @@
     <h1 class="abt">What Can We Look Forward To?</h1>
      <div class="expectation-wrapper">
         <div class="column-card">
-            <!-- <img class="fully-froggy" src="{fully_the_frog_fly}" alt=""> -->
-            <img class="fully-froggy" src="{left_mini_frog}" alt="">
-            <p><span>challenge and climb with </span>fellow designers</p>
+            <img class="fully-froggy" src="{fully_the_frog_fly}" alt="">
+            <p><span>Challenge and Climb with </span>fellow designers</p>
         </div>
         <div class="column-card">
-            <img class="fully-froggy3" src="{fully_once_the_frog}" alt="">
-            <p> <span>clash for top prices from our </span>sponsors</p>
+            <img class="fully-froggy2" src="{fully_once_the_frog}" alt="">
+            <p> <span>Clash for top prices from our </span>sponsors</p>
 
         </div>
         <div class="column-card">
-            <img class="fully-froggy2" src="{funna}" alt="">
-            <p> <span>get industry feedbacks from</span> mentors</p>
+            <img class="fully-froggy3" src="{funna}" alt="">
+            <p> <span>Get industry feedbacks from</span> mentors</p>
         </div>
     </div>
     
@@ -107,41 +106,37 @@
     
    
     .lotus-img {
-      width: 80px;
+      width: 150px;
     }
 
     .fully-froggy {
-        width: 70%;
-        height: 50%;
-        padding: 40px  ;
+        width: 80%;
+        height: 45%;
+        padding: 40px;
     }
 
-    .fully-froggy2{
-        width: 70%;
-        height: 50%;
-        padding: 40px  ;
+    .fully-froggy {
+        width: 80%;
+        height: 45%;
+        padding: 40px;
     }
 
-    .fully-froggy3{
-        width: 70%;
+    .fully-froggy2 {
+        width: 65%;
         height: 50%;
-        padding: 40px  ;
+        padding: 40px;
     }
 
-
-      
    
-    .first-section {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        width:100%;
-        gap: 10px;
+    .fully-froggy3 {
+        width: 65%;
+        height: 50%;
+        padding: 40px;
     }
 
     .what-container {
         background-color: #F5ECDE;
-        width: 25%;
+        width: 40%;
         height: 80%;
         border-radius: 40px;
         padding: 20px;
@@ -160,43 +155,39 @@
         margin: 20px;
     }
 
+    .first-section {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        width:100%;
+        gap: 10px;
+    }
    
     .expectation-wrapper {
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 100px; 
+        gap: 50px; 
         padding: 30px;
-        width: 50%;
         height: 300px;
-       
     }
     
     
 
     .column-card {
-        background-color: white;
-        border: 3px solid #6ED5A6;
-        border-radius: 10px;
-        width: 130%;
+        background-color: rgb(181, 232, 255);
+        border: 2px solid #ffffff;
+        border-radius: 20px;
+        width: 410px;
     }
 
     .column-card p {
         margin: 0;
-        color: #4E7411;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color:#6ED5A6;
+        color: #114674;
+        font-size: 2rem;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    span {
-        color: white;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color:#6ED5A6;
-        padding: 5px;
-    }
-   
-
-
-    
     
   /* for phomne */
  @media (max-width: 768px) {
@@ -207,7 +198,7 @@
     grid-template-columns: 1fr; 
   }
   .lotus-img {
-      width: 30px;
+      width: 50%;
     }
 
     .lily-pad {
