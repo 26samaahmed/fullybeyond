@@ -1,203 +1,150 @@
 <script>
-    import Accordion from "./Accordion.svelte";
-    import dirt from "../lib/Assets/FAQ/dirt_background.png"
-    import leftTree from "../lib/Assets/FAQ/left_tree.png"
-    import rightTree from "../lib/Assets/FAQ/right_tree.png"
-    import grassBkgrnd from "../lib/Assets/FAQ/grass_background.png"
-    import rightSmallFrog from "../lib/Assets/FAQ/right_mini_frog.png"
+    import { onMount } from 'svelte';
+    import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
 
-    import bee from "../lib/Assets/FAQ/bee.png"
-    import ladybug from "../lib/Assets/FAQ/ladybug.png"
-    import butterfly1 from "../lib/Assets/FAQ/butterfly1.png"
-    import butterfly2 from "../lib/Assets/FAQ/butterfly2.png"
-    import butterfly3 from "../lib/Assets/FAQ/butterfly3.png"
-    import bushLeft from "../lib/Assets/FAQ/bush_left.png"
-    import bushRight from "../lib/Assets/FAQ/bush_right.png"
+    let leftTree, rightTree, dirt, grassBkgrnd, bushLeft, bushRight, rightSmallFrog, ladybug, bushGroup, waterBkrnd;
+    let frogFly, bushesDirtFrog; 
 
-    import leftSmallFrog from "../lib/Assets/FAQ/left_mini_frog.png"
-    import fullyFrog from "../lib/Assets/FAQ/fully_the_frog_no_backpack.png"
-    import flyFrog from "../lib/Assets/FAQ/fully_the_frog_fly.png"
+    onMount(() => {
+        leftTree = '/lib/Assets/FAQ/left_tree.png';
+        rightTree = '/lib/Assets/FAQ/right_tree.png';
+        dirt = '/lib/Assets/FAQ/dirt_background.png';
+        bushLeft = '/lib/Assets/FAQ/bush_left.png';
+        bushRight = '/lib/Assets/FAQ/bush_right.png';
+        rightSmallFrog = '/lib/Assets/FAQ/right_mini_frog.png';
+        ladybug = '/lib/Assets/FAQ/ladybug.png';
+        bushGroup = '/lib/Assets/FAQ/bush_group.png';
+        grassBkgrnd = '/lib/Assets/FAQ/grass.png';
+        frogFly = '/lib/Assets/FAQ/fully_the_frog_fly.png';
+        bushesDirtFrog = '/lib/Assets/FAQ/floor.png';
+    });
+
+    let faqs = [
+        { id: 1, question: "What is a designathon?", 
+            answer: `A designathon is an intensive event where participants work solo or in teams to design, develop, and present innovative solutions 
+            to specific challenges within a set timeframe. It's similar to a hackathon but focuses on the design process (UX and UI, product design, and creative problem-solving). 
+            Participants can expect to collaborate, learn new skills, find friends, network, and receive mentorship from industry experts.`},
+        
+        { id: 2, question: "How do I participate?", 
+            answer: `Visit our registration google form at [link] and follow the 
+            instructions on the form. Registering is completely free as this is a free event. 
+            You should receive a confirmation email upon submitting your information. Follow the 
+            instructions on the email to complete your registration and prepare for FullyBeyond!` },
+
+        { id: 3, question: "How do I join the FullyBeyond Discord?", 
+            answer: ` Once you have been accepted into FullyBeyond after registering yourself 
+            as a participant, you will be sent an email with the Discord link.` },
+
+        { id: 4, question: "Do I need a team to participate?", 
+            answer: ` Your team can have a minimum of 1 member (yes, you can participate solo!) 
+            to a maximum of 4 members. If you don't have a team, don't worry! You can find others like you 
+            looking for a team to work with on our discord! \nOnce you find your team, there will be a form in Discord 
+            that 1 person on your team must fill in to officially register your team 
+            before the start of the event.` },
+
+        { id: 5, question: "What resources are available for participants?", 
+            answer: `We created a Participant Guide handbook [link] for those who are 
+            completely new to Designathons and need a push in the right direction. 
+            If you have any questions, please drop any concerns or 
+            questions under the #questions chat in the Discord channel.` },
+        
+        { id: 6, question: "Where is the event?", 
+            answer: "Fullybeyond is a virtual event held on Discord." },
+
+        { id: 7, question: "What are the prompts?",
+            answer: "Details of the prompts will be released on Discord at 11 AM on November 9th."
+        },
+
+        { id: 8, question: "How are submissions evaluated?", 
+            answer: `Your submissions are evaluated based on how well you visually present 
+            and verbally explain the concept of your solution, user research, and your design process. 
+            More details will be presented on Discord.`
+        }
+    ];
+
+    let accordions = faqs.map(faq => ({ ...faq, open: false }));
+
+    const handleToggle = (id) => {
+        const isCurrentlyOpen = accordions.find(a => a.id === id).open;
+
+        // Update all accordions to ensure only one is open
+        accordions = accordions.map(a => {
+            if (a.id === id) {
+                return { ...a, open: !isCurrentlyOpen };
+            } else {
+                return { ...a, open: false };
+            }
+        });
+    }
 </script>
 
 <svelte:head>
-  <title>FullyBeyond</title>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
 </svelte:head>
 
-<div class="FAQSection">
-    <img class="absolute left-0 z-1 leftTree" src={leftTree} alt="leftTree"/>
-    <img class="absolute right-0 z-1 rightTree" src={rightTree} alt="rightTree"/>
-    <img class="dirt" src={dirt} alt="dirt background"/>
-    <img class="absolute grass" src={grassBkgrnd} alt="grass background"/>
-    <img class="absolute bushLeft left-0" src={bushLeft} alt="bushLeft"/>
-    <img class="absolute bushRight right-0" src={bushRight} alt="bushRight"/>
+<div class="FAQSection relative h-full w-full mx-auto">
+    <img class="absolute left-0 z-10 w-auto h-full object-cover top-0" src={leftTree} alt="leftTree"/>
+    <img class="absolute right-0 z-10 w-auto h-full object-cover top-0" src={rightTree} alt="rightTree"/>
+    <img class="absolute bottom-0 z-10 w-full" src={bushesDirtFrog} alt="frog eating fly"/>
 
-    <div class="questionSection mt-64">
-        <img class="absolute rightFrog" src={rightSmallFrog} alt="right frog"/>
-        <img class="absolute bee opacity-50" src={bee} alt="bee"/>
-        <img class="absolute ladybug opacity-50" src={ladybug} alt="ladybug"/>
-        <img class="absolute butterfly1 opacity-50" src={butterfly1} alt="butterfly1"/>
-        <img class="absolute butterfly2 opacity-50" src={butterfly2} alt="butterfly2"/>
-        <img class="absolute butterfly3 opacity-50" src={butterfly3} alt="butterfly3"/>
-        <!-- <img class="absolute flyFrog" src={flyFrog} alt="fly frog"/> -->
-        <!-- <img class="absolute leftSmallFrog" src={leftSmallFrog} alt="left frog"/> -->
-        <!-- <img class="absolute fullyFrog" src={fullyFrog} alt="fully right frog"/> -->
+    <div class="relative w-full h-full">
+        <div class="textSection">
+            <h1 class="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-center mb-8">FAQ</h1>
 
-        <h1 class="font-extrabold">FAQ</h1>
-        <Accordion>
-            <span class="text-3xl font-bold" slot="head">What is a designathon?</span>
-            <div slot="details">
-                <p class="font-bold">
-                    It's a fun design competition.
-                </p>
+            <div class="relative questionSection z-20 
+                w-1/2 flex flex-col
+                items-center justify-center mx-auto">
+
+                {#each accordions as { id, question, answer, open }}
+                    <Accordion
+                        open={open} 
+                        on:toggle={() => handleToggle(id)}
+                    >
+                        <span class="text-2xl font-extrabold" slot="head">{question}</span>
+                        <div slot="details">
+                            <p class="text-2xl font-medium">{answer}</p>
+                        </div>
+                    </Accordion>
+                {/each}
             </div>
-        </Accordion>
-
-        <Accordion>
-            <span class="text-3xl font-bold" slot="head">What is a designathon?</span>
-            <div slot="details">
-                <p class="font-bold">
-                    It's a fun design competition.
-                </p>
-            </div>
-        </Accordion>
-
-        <Accordion>
-            <span class="text-3xl font-bold" slot="head">What is a designathon?</span>
-            <div slot="details">
-                <p class="font-bold">
-                    It's a fun design competition.
-                </p>
-            </div>
-        </Accordion>
-
-        <Accordion>
-            <span class="text-3xl font-bold" slot="head">What is a designathon?</span>
-            <div slot="details">
-                <p class="font-bold">
-                    It's a fun design competition.
-                </p>
-            </div>
-        </Accordion>
-
-        <Accordion>
-            <span class="text-3xl font-bold" slot="head">What is a designathon?</span>
-            <div slot="details">
-                <p class="font-bold">
-                    It's a fun design competition.
-                </p>
-            </div>
-        </Accordion>
-
-        <Accordion>
-            <span class="text-3xl font-bold" slot="head">What is a designathon?</span>
-            <div slot="details">
-                <p class="font-bold">
-                    It's a fun design competition.
-                </p>
-            </div>
-        </Accordion>
+        </div>
     </div>
-    
 </div>
 
-<style lang="postcss">
-    h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 10rem;
-        color: #B5F7DD;
-        font-weight: 900;
-        /* -webkit-text-stroke: 0.1rem; */
-        /* -webkit-text-stroke-color: #1C8B82; */
-        text-shadow:
-            -4px -4px 0 #1C8B82,
-            0   -4px 0 #1C8B82,
-            4px -4px 0 #1C8B82,
-            4px  0   0 #1C8B82,
-            4px  4px 0 #1C8B82,
-            0    4px 0 #1C8B82,
-            -4px  4px 0 #1C8B82,
-            -4px  0   0 #1C8B82;
-    }
-
-    div.FAQSection {
-        display: flex;
-        flex-direction: column;
-        width: 120rem;
-        height: 100rem;
-        top: 15rem;
-        position: relative; 
+<style>
+    .FAQSection {
+        position: relative;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        width: 100%;
+        height: 220vh;
         background-color: #C2FAE9;
+        background-image: url('/lib/Assets/FAQ/grass.png');
     }
 
-    div.questionSection {
-        width: 120rem;
-        align-items: center;
-        /* justify-content: center; */
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
+    h1 {
+        position: relative;
+        z-index: 30;
+        color: #B5F7DD;
+        font-size: 10rem;
+        letter-spacing: 0.5rem;
+        text-shadow:
+            -6px -6px 0 #1C8B82,
+            0   -6px 0 #1C8B82,
+            6px -6px 0 #1C8B82,
+            6px  0   0 #1C8B82,
+            6px  6px 0 #1C8B82,
+            0    6px 0 #1C8B82,
+            -6px  6px 0 #1C8B82,
+            -6px  0   0 #1C8B82;
     }
 
-    img.leftTree, img.rightTree {
-        height: 110rem;
-        top: -20rem;
-        z-index: 1;
+    .questionSection {
+        z-index: 20; 
     }
 
-    img.dirt {
+    .textSection {
+        margin-top: 30vh;
         position: absolute;
         width: 100%;
-        /* bottom: -1rem; */
-        bottom: -2rem;
-        z-index: 1;
     }
-
-    img.grass {
-        z-index: 0;
-        width: 120rem;
-        height: 100rem;
-    }
-
-    img.rightFrog {
-        top: 27rem;
-        left: 75rem;
-    }
-
-    img.bushLeft, img.bushRight {
-        width: 40rem;
-        z-index: 0;
-        bottom: 2rem;
-    }
-
-    img.ladybug {
-        top: 40rem;
-        left: 15rem;
-    }
-
-    img.bee {
-        right: 10rem;
-        top: 50rem;
-    }
-
-    img.butterfly1 {
-        left: 40rem;
-        top: 10rem;
-        width: 8rem;
-    }
-
-    img.butterfly2 {
-        left: 32rem;
-        top: 10rem;
-        width: 8rem;
-    }
-
-    img.butterfly3 {
-        left: 36rem;
-        top: 15rem;
-        width: 8rem;
-    }
-
 </style>
