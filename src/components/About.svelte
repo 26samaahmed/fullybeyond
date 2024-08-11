@@ -1,234 +1,76 @@
 <script>
-    import lotus from "../lib/Assets/About/lotus.png"
-    import leaves2 from "../lib/Assets/Expectations/leaves2.png"
-    import lilly_pad from "../lib/Assets/Expectations/lilly_pad.png"
-    import fully_the_frog_fly from  "../lib/Assets/FAQ/fully_the_frog_fly.png"
-    import right_mini_frog  from "../lib/Assets/FAQ/right_mini_frog.png"
-    import funna from "../lib/Assets/EventDetails/funna.png"
-    import fully_once_the_frog from "../lib/Assets/EventDetails/fully_once_the_frog.png"
-    import left_mini_frog from "../lib/Assets/FAQ/left_mini_frog.png"
+    import lotus from "../lib/Assets/About/lotus.png";
+    import leaves2 from "../lib/Assets/Expectations/leaves2.png";
+    import lilly_pad from "../lib/Assets/Expectations/lilly_pad.png";
+    import fully_the_frog_fly from  "../lib/Assets/FAQ/fully_the_frog_fly.png";
+    import right_mini_frog  from "../lib/Assets/FAQ/right_mini_frog.png";
+    import funna from "../lib/Assets/EventDetails/funna.png";
+    import fully_once_the_frog from "../lib/Assets/EventDetails/fully_once_the_frog.png";
+    import left_mini_frog from "../lib/Assets/FAQ/left_mini_frog.png";
+    import acmlogo from "../lib/Assets/About/acmlogo.svg"
 </script>
 
-<main>
-    <img class= "lotus-img" src="{lotus}" alt="lotus-flower"/> 
-    <h1 class="abt">About US</h1>
-    <div class="first-section">
-        <div class=" card what-container">
-            <h2 class="abt-fully"> What is FullyBeyond?</h2>
-            <p class="abt-fully-p">
+<main class="flex flex-col items-center justify-center text-center p-2.5">
+    <img class="w-36 py-5" src="{lotus}" alt="lotus-flower"/>
+
+    <h1 class="text-7xl font-black uppercase text-[#6BD1A9] stroke-5">About US</h1>
+    
+    <div class="flex flex-wrap font-bold justify-center p-5 w-full gap-2.5">
+        <div class="bg-[#F5ECDE] w-2/5 h-4/5 rounded-3xl p-5 m-5">
+            <h2 class="text-[#959A25] text-2xl">What is FullyBeyond?</h2>
+            <p class="text-[#294105]  text-1xl py-6">
                 Fully Beyond is the CSUF Designathon 2024 theme, inviting you to leapfrog conventional design thinking and explore the unexplored. 
                 Here, we'll delve deep into the vibrant world of inclusivity and diversity as the cornerstones of our design process.
-                
             </p>
-            <p class="abt-fully-p">
+
+            <p class="text-[#294105]">
                 Just like a lush rainforest teems with life, design flourishes when it embraces a variety of perspectives. 
                 We believe in empathy, equity, and celebrating differences. By going Fully Beyond, we can unlock the power of
-                 design to shape a future that reflects the richness of our ever-evolving society.
+                design to shape a future that reflects the richness of our ever-evolving society.
             </p>
         </div>
-        <div class=" card other-container">
-           <h1>place-holder</h1>
-           <p> this is a place-holder</p>
+        <div class =  "flex justify-center items-center w-1/4 h-1/4 p-5 m-5">
+            <img class="acm-logo w-full h-auto"  src="{acmlogo}" alt="acm-logo">
         </div>
     </div>
 
+    <img class="w-36 py-5" src="{lotus}" alt="lotus-flower"/> 
+    <h1 class="text-6xl font-black uppercase text-[#6BD1A9] stroke-5 py-6">What Can We Look Forward To?</h1>
     
-<!-- 
-    <img class= "lotus-img" src="{lotus}" alt="lotus-flower"/> 
-    <h1 class="abt">What Can We Look Forward To?</h1>
 
-    <div class="container">
-        <img class="lily-pad"   src="{lilly_pad}" alt="lilly-pad-img">
-        <img class="leaves"   src="{leaves2}" alt="leaves-img">
-        <div class="video-section">
-            <p>place-holder</p>
-        </div>
-    </div> -->
-  
-
-    <!-- 3 colummn grid template -->
-    <img class= "lotus-img" src="{lotus}" alt="lotus-flower"/> 
-    <h1 class="abt">What Can We Look Forward To?</h1>
-     <div class="expectation-wrapper">
-        <div class="column-card">
-            <img class="fully-froggy" src="{fully_the_frog_fly}" alt="">
-            <p><span>Challenge and Climb with </span>fellow designers</p>
-        </div>
-        <div class="column-card">
-            <img class="fully-froggy2" src="{fully_once_the_frog}" alt="">
-            <p> <span>Clash for top prices from our </span>sponsors</p>
-
-        </div>
-        <div class="column-card">
-            <img class="fully-froggy3" src="{funna}" alt="">
-            <p> <span>Get industry feedbacks from</span> mentors</p>
+    <div class="p-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-auto max-w-7xl">
+            <div class="bg-[#B5E8FF] border-2 border-white font-bold rounded-2xl w-full h-[410px] flex flex-col justify-center items-center">
+                <img class="w-full h-3/4 object-contain p-5" src="{fully_the_frog_fly}" alt="">
+                <p class="m-0 text-[#114674] text-2xl px-2.5 text-center"><span>Challenge and Climb with </span>fellow designers</p>
+            </div>
+            <div class="bg-[#B5E8FF] border-2 font-bold border-white rounded-2xl w-full h-[410px] flex flex-col justify-center items-center">
+                <img class="w-full h-3/4 object-contain p-5" src="{fully_once_the_frog}" alt="">
+                <p class="m-0 text-[#114674] text-2xl px-2.5 text-center"><span>Clash for top prices from our </span>sponsors</p>
+            </div>
+            <div class="bg-[#B5E8FF] border-2 font-bold border-white rounded-2xl w-full h-[410px] flex flex-col justify-center items-center">
+                <img class="w-full h-3/4 object-contain p-5" src="{funna}" alt="">
+                <p class="m-0 text-[#114674] text-2xl px-2.5 text-center"><span>Get industry feedbacks from</span> mentors</p>
+            </div>
         </div>
     </div>
+    
     
 </main>
 
 <style>
-     :global(body) {
+   :global(body) {
         background-color: #89CAD8;
-        font-weight: 900;
         font-family: "M PLUS Rounded 1c", sans-serif;
     }
 
-    main {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;    
-        justify-content: center; 
-        text-align: center;     
-        padding: 10px;  
-    }
-
-    .abt {
-        color: #6BD1A9;
-        font-size: 4rem;
-        font-weight: 900;
-        text-transform: uppercase;
+    
+    .stroke-5 {
         -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color:#1C8B82 ;
+        -webkit-text-stroke-color: #1C8B82;
     }
 
-    .abt-fully {
-        color: #959A25;
-    }
 
-    .abt-fully-p {
-        color: #294105;
-    }
-    /* h1 {
-        -webkit-text-stroke-width: 3px;
-        -webkit-text-stroke-color: #6ED5A6;   
-    } */
-    
-   
-    .lotus-img {
-      width: 150px;
-    }
-
-    .fully-froggy {
-        width: 80%;
-        height: 45%;
-        padding: 40px;
-    }
-
-    .fully-froggy {
-        width: 80%;
-        height: 45%;
-        padding: 40px;
-    }
-
-    .fully-froggy2 {
-        width: 65%;
-        height: 50%;
-        padding: 40px;
-    }
-
-   
-    .fully-froggy3 {
-        width: 65%;
-        height: 50%;
-        padding: 40px;
-    }
-
-    .what-container {
-        background-color: #F5ECDE;
-        width: 40%;
-        height: 80%;
-        border-radius: 40px;
-        padding: 20px;
-        margin: 20px;
-        /* top right bottom left  */
-
-
-    }
-
-    .other-container {
-        background-color: white;
-        border-radius: 40px;
-        width: 25%;
-        height: 25%;
-        padding: 20px;
-        margin: 20px;
-    }
-
-    .first-section {
-        display: flex;
-        justify-content: center;
-        padding: 20px;
-        width:100%;
-        gap: 10px;
-    }
-   
-    .expectation-wrapper {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 50px; 
-        padding: 30px;
-        height: 300px;
-    }
     
     
-
-    .column-card {
-        background-color: rgb(181, 232, 255);
-        border: 2px solid #ffffff;
-        border-radius: 20px;
-        width: 410px;
-    }
-
-    .column-card p {
-        margin: 0;
-        color: #114674;
-        font-size: 2rem;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    
-  /* for phomne */
- @media (max-width: 768px) {
-    .abt {
-        font-size:2rem; 
-    }
-  .expectation-wrapper {
-    grid-template-columns: 1fr; 
-  }
-  .lotus-img {
-      width: 50%;
-    }
-
-    .lily-pad {
-        display: none;
-    }   
-   
-    .leaves {
-        display: none;
-    }
-
-    
-    .first-section {
-    flex-direction: column;
-    align-items: center; 
-  }
-
-  .card {
-    width: 80%;
-  }
-
-  .video-section {
-    padding: 5rem;
-    height: 50px;
-    width: 50px;
-  }
-}
-/* for tablets  */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .expectation-wrapper {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
 </style>
