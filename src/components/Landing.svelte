@@ -16,31 +16,50 @@
 	import lotus_on_lilly_pad2 from '$lib/Assets/Landing/lotus_on_lilly_pad2.png';
 	import lilly_pad from '$lib/Assets/Landing/lilly_pad.png';
 	import opposite_lilly_pad from '$lib/Assets/Landing/opposite_lilly_pad.png';
+
+	let containers = [
+		{
+			title: "DATE",
+			description: "NOV. 9 - NOV. 10",
+			image: lilly_pad
+		},
+		{
+			title: "DURATION",
+			description: "24 HOURS",
+			image: opposite_lilly_pad
+		},
+		{
+			title: "LOCATION",
+			description: "VIRTUAL",
+			image: lilly_pad
+		}
+	];
+	
 </script>
 
 <main>
 	<NavBar />
 	<div class="relative">
-		<img src={sunset} alt="Sunset" class="scale-150 object-cover mt-36 mb-48 max-w-full md:scale-100 md:w-3/4 md:block md:mx-auto md:mt-16 md:top-0 md:left-0 md:z-0 sm:mt-52" />
+		<img src={sunset} alt="Sunset" class="scale-150 object-cover mt-36 mb-48 max-w-full md:scale-125 lg:scale-100 md:w-3/4 md:block md:mx-auto md:mt-28 md:left-0 md:z-0 sm:mt-52" />
 		<img src={hills} alt="Hills" class="hidden md:w-full md:block md:ml-auto md:mr-auto md:left-0 md:absolute md:z-10 md:top-28" />
 		<!--<img src={grass} alt="Grass" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:left-0 absolute z-10" />-->
-		<img src={side_leaves} alt="Side Leaves" class="hidden md:block md:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
+		<img src={side_leaves} alt="Side Leaves" class="hidden lg:block lg:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
 		
 	
-    <div id="center-introduction" class="absolute w-full flex flex-col items-center text-[#FFE8C5] top-0 md:top-24">
-        <span class="text-4xl w-80 sm:w-full sm:text-4xl md:text-2xl lg:text-5xl z-10 font-extrabold text-center">
+    <div id="center-introduction" class="absolute w-full flex flex-col items-center text-[#FFE8C5] top-0 md:top-20">
+        <span class="text-4xl w-80 sm:w-full sm:text-4xl md:text-3xl lg:text-5xl z-10 font-extrabold text-center">
             FullyBeyond: Across the Pond
         </span>
-        <span class="text-2xl md:text-lg lg:text-3xl z-10 font-black mt-4 text-center">
+        <span class="text-2xl md:text-2xl lg:text-3xl z-10 font-black mt-4 text-center">
             CSUF's First Designathon
         </span>
-        <span class="text-2xl md:text-lg lg:text-3xl z-10 font-black mt-4 text-center">
+        <span class="text-2xl md:text-2xl lg:text-3xl z-10 font-black mt-4 text-center">
             November 9th - 10th
         </span>
 
-				<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 mt-10 z-20">
-					<button class="text-xl mb-2 bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 h-14 font-light sm:mb-0">Apply Now!</button>
-					<button class="text-xl bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 h-14 font-light">Sponsor Us!</button>
+				<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-10 mt-10 z-20">
+					<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light sm:mb-0">Apply Now!</button>
+					<button class="text-xl md:text-base bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36  h-14 font-light">Sponsor Us!</button>
 				</div>
 
     </div>
@@ -55,23 +74,15 @@
 			</div>
 
 			<div class="flex flex-col md:flex-row lg:flex-row items-center justify-center space-y-8 md:space-x-10 lg-space-x-20 md:space-y-0 mt-20 m-4">
-				<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
-						<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">DATE</p>
-						<span class="text-[#000000] text-3xl sm:text-xl lg:text-3xl font-extrabold absolute">NOV. 9 - NOV.10</span>
-						<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3 sm:w-28 md:w-40" />
-				</div>
-		
-				<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
-						<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">DURATION</p>
-						<span class="text-[#000000] text-3xl sm:text-xl lg:text-3xl font-extrabold absolute">24 HOURS</span>
-						<img src={opposite_lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3 sm:w-28 md:w-40" />
-				</div>
-		
-				<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
-						<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">LOCATION</p>
-						<span class="text-[#000000] text-3xl sm:text-xl lg:text-3xl font-extrabold absolute">VIRTUAL</span>
-						<img src={lilly_pad} alt="Lilly Pad" class="absolute w-40 bottom-3 sm:w-28 md:w-40" />
-				</div>
+
+				{#each containers as containers}
+					<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
+						<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">{containers.title}</p>
+						<span class="text-[#000000] text-3xl sm:text-xl lg:text-3xl font-extrabold absolute">{containers.description}</span>
+						<img src={containers.image} alt="Lilly Pad" class="absolute w-40 bottom-3 sm:w-28 md:w-40" />
+					</div>
+				{/each}
+				
 			</div>
 		
 		</div>
