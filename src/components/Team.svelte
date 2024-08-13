@@ -19,6 +19,10 @@
     import samapf from '../lib/Assets/Team/sama.jpg';
     import loripf from '../lib/Assets/Team/lori.jpg';
     import richardpf from '../lib/Assets/Team/richard.png';
+    import elziepf from '../lib/Assets/Team/elzie.jpeg';
+    import olapf from '../lib/Assets/Team/ola.jpeg';
+    import tylerpf from '../lib/Assets/Team/tyler.jpeg';
+    import ryanpf from '../lib/Assets/Team/ryan.png';
 
     let team = [
       { name: 'Yulie Ledesma', role: 'Marketing Officer', image: yuliepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
@@ -28,7 +32,11 @@
       { name: 'Tanishaa Naik', role: 'Marketing Officer', image: tanishapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Sama Ahmed', role: 'Web Dev Lead', image: samapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Lori Cha', role: 'Web Dev & Marketing Officer', image: loripf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Richard Hoang', role: 'Design & Marketing Officer', image: richardpf, leafImageLeft: leafLeft, leafImageRight: leafRight}
+      { name: 'Richard Hoang', role: 'Design & Marketing Officer', image: richardpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Elzie', role: 'Design Officer', image: elziepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Oyinkansola Olayinka ', role: 'Web Dev & Marketing Officer', image: olapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Tyler Lui', role: 'Web Dev Officer', image: tylerpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Ryan Avancena', role: 'Web Dev Officer', image: ryanpf, leafImageLeft: leafLeft, leafImageRight: leafRight}
     ];
 </script>
 
