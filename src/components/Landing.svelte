@@ -40,20 +40,20 @@
 <main>
 	<NavBar />
 	<div class="relative">
-		<img src={sunset} alt="Sunset" class="scale-150 object-cover mt-36 mb-48 max-w-full md:scale-125 lg:scale-100 md:w-3/4 md:block md:mx-auto md:mt-28 md:left-0 md:z-0 sm:mt-52" />
+		<img src={sunset} alt="Sunset" class="scale-150 object-cover mt-36 mb-48 max-w-full md:scale-125 lg:scale-100 md:w-3/4 md:block md:mx-auto md:mt-28 lg:mt-16 md:left-0 md:z-0 sm:mt-52" />
 		<img src={hills} alt="Hills" class="hidden md:w-full md:block md:ml-auto md:mr-auto md:left-0 md:absolute md:z-10 md:top-28" />
-		<!--<img src={grass} alt="Grass" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:left-0 absolute z-10" />-->
-		<img src={side_leaves} alt="Side Leaves" class="hidden lg:block lg:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
+		<img src={grass} alt="Grass" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:top-2/3 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:left-0 absolute z-10" />
+		<img src={side_leaves} alt="Side Leaves" class="hidden md:block md:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
 		
 	
-    <div id="center-introduction" class="absolute w-full flex flex-col items-center text-[#FFE8C5] top-0 md:top-20">
-        <span class="text-4xl w-80 sm:w-full sm:text-4xl md:text-3xl lg:text-5xl z-10 font-extrabold text-center">
+    <div id="center-introduction" class="absolute w-full flex flex-col items-center text-[#FFE8C5] top-0 md:top-20 lg:top-36">
+        <span class="text-4xl w-80 sm:w-full sm:text-4xl md:text-3xl lg:text-4xl z-10 font-extrabold text-center">
             FullyBeyond: Across the Pond
         </span>
-        <span class="text-2xl md:text-2xl lg:text-3xl z-10 font-black mt-4 text-center">
+        <span class="text-2xl md:text-2xl z-10 font-black mt-4 text-center">
             CSUF's First Designathon
         </span>
-        <span class="text-2xl md:text-2xl lg:text-3xl z-10 font-black mt-4 text-center">
+        <span class="text-2xl md:text-2xl z-10 font-black mt-4 text-center">
             November 9th - 10th
         </span>
 
@@ -65,7 +65,7 @@
     </div>
 
 
-		<div class="absolute bg-[#78BFCE] top-80 sm:top-3/4 left-0 w-full h-lvh z-10">
+		<div class="absolute bg-[#78BFCE] top-80 md:top-auto left-0 w-full h-lvh z-10">
 			<div class="absolute w-full grid items-center">
 				<img src={dark_waves} alt="Dark Waves" class="scale-150 w-full block absolute left-0 z-10" />
 				<img src={light_waves} alt="Light Waves" class="scale-150 w-full block absolute left-0 z-10" />
@@ -82,7 +82,7 @@
 						<img src={containers.image} alt="Lilly Pad" class="absolute w-40 bottom-3 sm:w-28 md:w-40" />
 					</div>
 				{/each}
-				
+
 			</div>
 		
 		</div>
