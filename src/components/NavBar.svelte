@@ -6,9 +6,9 @@
 
 	let navBar = [
 		{ name: "Home", link: "/" },
-		{ name: "Event", link: "/event" },
-		{ name: "About", link: "/about" },
-		{ name: "FAQ", link: "/faq" }
+		{ name: "Event", link: "#event" },
+		{ name: "About", link: "#about" },
+		{ name: "FAQ", link: "#faq" }
 	];
 
 	let socialMedia = [
@@ -22,6 +22,14 @@
 	function toggleMenu() {
 		showMenu = !showMenu;
 	}
+
+	function scrollIntoView({ target }) {
+      const el = document.querySelector(target.getAttribute('href'));
+      if (!el) return;
+      el.scrollIntoView({
+        behavior: 'smooth'
+      });
+  }
 	
 </script>
 
@@ -49,7 +57,7 @@
 					<!--Show the nav bar items here but hide them on mobile since they show when I click on the burger menu-->
 					<div class="hidden md:flex md:items-center md:space-x-6 px-3">
 						{#each navBar as item}
-							<a href={item.link} class="font-medium text-xl md:text-lg hover:text-gray-400">{item.name}</a>
+							<a href={item.link} on:click|preventDefault={scrollIntoView}  class="font-medium text-xl md:text-lg hover:text-gray-400">{item.name}</a>
 						{/each}
 					</div>
 
@@ -72,7 +80,7 @@
           : 'hidden'}">
 					<div class="flex flex-col items-center space-y-4 md:flex-row md:space-y-0">
 						{#each navBar as item}
-							<a href={item.link} class="text-lg font-medium text-gray-800 hover:text-gray-400">{item.name}</a>
+							<a href={item.link} on:click|preventDefault={scrollIntoView}  class="text-lg font-medium text-gray-800 hover:text-gray-400">{item.name}</a>
 						{/each}
 					</div>
 				</div>
