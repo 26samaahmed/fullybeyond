@@ -16,9 +16,9 @@
 
     <h1 class="text-5xl sm:text-6xl md:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 ">About US</h1>
     
-    <div class="flex flex-wrap flex-col md:flex-row font-bold justify-center p-4 sm:p-5 md:p-8 w-full gap-4">
-        <div class="bg-[#F5ECDE] w-full md:w-2/5  h-auto rounded-3xl p-5 m-5">
-            <h2 class="text-[#959A25] text-xl md:text-2xl">What is FullyBeyond?</h2>
+    <div class="flex flex-wrap flex-col  md:flex-row font-bold justify-center p-4 sm:p-5 md:p-8 w-full gap-4">
+        <div class="bg-[#F5ECDE] w-full md:w-full lg:w-2/5 h-auto rounded-3xl p-5 m-5">
+            <h2 class="text-[#959A25] text-3xl md:text-4xl ">What is FullyBeyond?</h2>
             <p class="text-[#294105]  text-base sm:text-lg py-4">
                 Fully Beyond is the CSUF Designathon 2024 theme, inviting you to leapfrog conventional design thinking and explore the unexplored. 
                 Here, we'll delve deep into the vibrant world of inclusivity and diversity as the cornerstones of our design process.
