@@ -49,7 +49,7 @@
             questions under the #questions chat in the Discord channel.` },
         
         { id: 6, question: "Where is the event?", 
-            answer: "Fullybeyond is a virtual event held on Discord." },
+            answer: "Fullybeyond is a virtual event held on Discord!" },
 
         { id: 7, question: "What are the prompts?",
             answer: "Details of the prompts will be released on Discord at 11 AM on November 9th."
