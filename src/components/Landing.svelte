@@ -44,22 +44,22 @@
 		<img src={hills} alt="Hills" class="hidden md:w-full md:block md:ml-auto md:mr-auto md:left-0 md:absolute md:z-10 md:top-28" />
 		<img src={grass} alt="Grass" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:top-2/3 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:bottom-0 md:left-0 absolute z-10" />
 		<img src={side_leaves} alt="Side Leaves" class="hidden md:block md:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
-    <div id="center-introduction" class="absolute w-full flex flex-col items-center text-[#FFE8C5] top-0 md:top-20 lg:top-36">
-        <span class="text-4xl w-80 sm:w-full sm:text-4xl md:text-3xl lg:text-4xl z-10 font-extrabold text-center">
+    <div id="center-introduction" class="absolute w-full flex flex-col items-center top-0 md:top-20 lg:top-36">
+        <span class="text-4xl w-80 text-[#FFE8C5] sm:w-full sm:text-4xl md:text-3xl lg:text-4xl z-10 font-extrabold text-center">
             FullyBeyond: Across the Pond
         </span>
-        <span class="text-2xl md:text-2xl z-10 font-black mt-4 text-center">
+        <span class="text-2xl text-[#FFE8C5] md:text-2xl z-10 font-black mt-4 text-center">
             CSUF's First Designathon
         </span>
-        <span class="text-2xl md:text-2xl z-10 font-black mt-4 text-center">
+        <span class="text-2xl text-[#FFE8C5] md:text-2xl z-10 font-black mt-4 text-center">
             November 9th - 10th
         </span>
 
 				<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-10 mt-10 z-20">
-					<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light sm:mb-0">Apply Now!</button>
-					<button class="text-xl md:text-base bg-[#FFE8C5] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36  h-14 font-light">Sponsor Us!</button>
+					<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light sm:mb-0 hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out">Apply Now!</button>
+					<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out">Sponsor Us!</button>
 				</div>
-
+				
     </div>
 
 
@@ -96,7 +96,14 @@
   }
 
 	#center-introduction {
-		-webkit-text-stroke: 1.7px rgb(169, 82, 113);
-	}
+    -webkit-text-stroke: 1.7px rgb(169, 82, 113);
+}
+
+#center-introduction button:hover {
+    -webkit-text-stroke: 1.2px rgb(255, 255, 255);
+    color: white !important;
+}
+
+
 
 </style>

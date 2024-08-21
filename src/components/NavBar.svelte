@@ -34,7 +34,7 @@
 </script>
 
 <main>
-		<nav class="container px-6 py-3 mt-3 mx-auto md:flex md:justify-center md:items-center md:bg-[#FFF2DF] md:rounded-3xl md:border-[#B75D77] md:border-2">
+		<nav class="container px-6 py-3 lg:w-fit lg:px-16 mt-3 mx-auto md:flex md:justify-center md:items-center md:bg-[#FFF2DF] md:rounded-3xl md:border-[#B75D77] md:border-2">
 			<div class="flex items-center justify-between">
 				<div class="flex flex-row">
 
