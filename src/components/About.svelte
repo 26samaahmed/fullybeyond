@@ -12,7 +12,7 @@
     <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 ">About US</h1>
     
     <div class="flex flex-wrap flex-col  md:flex-row font-bold justify-center p-4 sm:p-5 md:p-8 w-full gap-4">
-        <div class="bg-[#F5ECDE] w-full md:w-full lg:w-3/5 h-auto rounded-3xl p-5 m-5 sm:m-0 max-w-screen-2xl">
+        <div class="bg-[#F5ECDE] w-full md:w-full lg:w-3/5 h-auto rounded-3xl p-5 m-0 mt-3 sm:m-5 max-w-screen-2xl">
             <h2 class="text-[#959A25] text-2xl sm:text-3xl lg:text-4xl  ">What is FullyBeyond?</h2>
             <p class="text-[#294105]  text-base md:text-lg lg:text-xl xl:text-2xl py-4">
                 Fully Beyond is the CSUF Designathon 2024 theme, inviting you to leapfrog conventional design thinking and explore the unexplored. 
@@ -27,7 +27,7 @@
         </div>
 
 
-        <div class =  "flex justify-center items-center w-full  lg:w-1/4 sm:m-0 h-auto p-5 m-5">
+        <div class =  "flex justify-center items-center w-full  lg:w-1/4 h-auto p-5 m-0 sm:m-5">
             <img class="acm-logo w-full h-auto"  src="{acmlogo}" alt="acm-logo">
         </div>
     </div>
@@ -35,7 +35,7 @@
 
 
     <img class="w-24 sm:w-30 lg:w-36 py-5 " src="{lotus}" alt="lotus-flower"/>
-    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 py-6">What Can We Look Forward To?</h1>
+    <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 py-6">What Can We Look Forward To?</h1>
     
 
     <div class="p-4 sm:p-6 md:p-8">
