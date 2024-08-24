@@ -2,6 +2,11 @@
   <title>FullyBeyond</title>
 </svelte:head>
 
+<script>
+  import Landing from '../components/Landing.svelte';
+</script>
+
 <main>
-  <h1>Welcome to FullyBeyond</h1>
+
+  <Landing />
 </main>
