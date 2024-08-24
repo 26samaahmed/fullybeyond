@@ -18,7 +18,7 @@
     <img src={waves} alt="Wave" class="absolute top-0 left-0 w-full h-full z-10 object-cover" />
   </div>
   
-  <div class="relative z-20 bg-gradient-to-t from-[#FFB44E] to-[#A95271] pt-16">
+  <div class="relative z-20 bg-gradient-to-t from-[#FFB44E] to-[#A95271] pt-16 -mt-[2px]">
     <Awards />
   </div>
 
