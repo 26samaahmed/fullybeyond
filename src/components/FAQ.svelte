@@ -1,21 +1,28 @@
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</svelte:head>
+
 <script>
     import { onMount } from 'svelte';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
 
-    let leftTree, rightTree, dirt, grassBkgrnd, bushLeft, bushRight, rightSmallFrog, ladybug, bushGroup, waterBkrnd;
+    let leftTree, rightTree, floor, grassBkgrnd, bushLeft, bushRight, rightSmallFrog, ladybug, bushGroup, waterBkrnd;
     let frogFly, bushesDirtFrog; 
 
     onMount(() => {
         leftTree = '/lib/Assets/FAQ/left_tree.png';
         rightTree = '/lib/Assets/FAQ/right_tree.png';
-        dirt = '/lib/Assets/FAQ/dirt_background.png';
-        bushLeft = '/lib/Assets/FAQ/bush_left.png';
-        bushRight = '/lib/Assets/FAQ/bush_right.png';
-        rightSmallFrog = '/lib/Assets/FAQ/right_mini_frog.png';
-        ladybug = '/lib/Assets/FAQ/ladybug.png';
+        floor = '/lib/Assets/FAQ/dirt.png';
+        // bushLeft = '/lib/Assets/FAQ/bush_left.png';
+        // bushRight = '/lib/Assets/FAQ/bush_right.png';
+        // rightSmallFrog = '/lib/Assets/FAQ/right_mini_frog.png';
+        // ladybug = '/lib/Assets/FAQ/ladybug.png';
         bushGroup = '/lib/Assets/FAQ/bush_group.png';
         grassBkgrnd = '/lib/Assets/FAQ/grass.png';
-        frogFly = '/lib/Assets/FAQ/fully_the_frog_fly.png';
+        // frogFly = '/lib/Assets/FAQ/fully_the_frog_fly.png';
         bushesDirtFrog = '/lib/Assets/FAQ/floor.png';
     });
 
@@ -78,73 +85,115 @@
     }
 </script>
 
-<svelte:head>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap" rel="stylesheet">
-</svelte:head>
+<main>
+    <div class="faq-container">
+        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src={leftTree} alt="Left Tree"/>
+        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src={rightTree} alt="Right Tree"/>
+        <img class="absolute top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background"/>
+        <div class="content mt-[40vh] sm:mt-[40vh] z-30">
+            <h1>FAQ</h1>
 
-<div class="FAQSection relative h-full w-full mx-auto">
-    <img class="absolute left-0 z-10 w-auto h-full object-cover top-0" src={leftTree} alt="leftTree"/>
-    <img class="absolute right-0 z-10 w-auto h-full object-cover top-0" src={rightTree} alt="rightTree"/>
-    <img class="absolute bottom-0 z-10 w-full" src={bushesDirtFrog} alt="frog eating fly"/>
-
-    <div class="relative w-full h-full">
-        <div class="textSection">
-            <h1 class="text-4xl sm:text-6xl lg:text-8xl font-extrabold text-center mb-8">FAQ</h1>
-
-            <div class="relative questionSection z-20 
-                w-1/2 flex flex-col
-                items-center justify-center mx-auto">
-
+            <div class="accordion-container">
                 {#each accordions as { id, question, answer, open }}
                     <Accordion
                         open={open} 
                         on:toggle={() => handleToggle(id)}
                     >
-                        <span class="text-2xl font-extrabold" slot="head">{question}</span>
+                        <span class="question" slot="head">{question}</span>
                         <div slot="details">
-                            <p class="text-2xl font-medium">{answer}</p>
+                            <p class="answer">{answer}</p>
                         </div>
                     </Accordion>
                 {/each}
             </div>
         </div>
+        <!-- <img class="absolute w-screen z-20 bottom-0" src={bushGroup} alt="bushes"/> -->
+        <img class="relative w-screen z-10 bottom-0 pt-32" src={floor} alt="floor"/>
     </div>
-</div>
+</main>
 
 <style>
-    .FAQSection {
-        position: relative;
-        font-family: 'M PLUS Rounded 1c', sans-serif;
+    main {
+        font-family: "M PLUS Rounded 1c", sans-serif;
         width: 100%;
-        height: 220vh;
+        height: 100%;
+        margin: 0;
+    }
+
+    .faq-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
         background-color: #C2FAE9;
-        background-image: url('/lib/Assets/FAQ/grass.png');
+        /* background: linear-gradient(to bottom, #959A25, #01641C); */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .absolute {
+        object-fit: cover;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        max-width: 1200px;
+        /* margin-top: 20%; */
+        /* margin-top: 50vh; */
+        padding: 0 2rem;
     }
 
     h1 {
-        position: relative;
-        z-index: 30;
+        font-size: 6rem;
+        font-weight: 900;
         color: #B5F7DD;
-        font-size: 10rem;
         letter-spacing: 0.5rem;
+        text-align: center;
         text-shadow:
-            -6px -6px 0 #1C8B82,
-            0   -6px 0 #1C8B82,
-            6px -6px 0 #1C8B82,
-            6px  0   0 #1C8B82,
-            6px  6px 0 #1C8B82,
-            0    6px 0 #1C8B82,
-            -6px  6px 0 #1C8B82,
-            -6px  0   0 #1C8B82;
+            -0.3vw -0.3vw 0 #1C8B82,
+            0   -0.3vw 0 #1C8B82,
+            0.3vw -0.3vw 0 #1C8B82,
+            0.3vw  0   0 #1C8B82,
+            0.3vw 0.3vw 0 #1C8B82,
+            0    0.3vw 0 #1C8B82,
+            -0.3vw  0.3vw 0 #1C8B82,
+            -0.3vw  0   0 #1C8B82;
+        margin-bottom: 2rem;
     }
 
-    .questionSection {
-        z-index: 20; 
-    }
-
-    .textSection {
-        margin-top: 30vh;
-        position: absolute;
+    .accordion-container {
         width: 100%;
+        max-width: 1200px;
+        margin-top: 2rem;
+    }
+
+    .question {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .answer {
+        font-size: 1.25rem;
+        font-weight: normal;
+    }
+
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.25rem;
+        }
+
+        .question {
+            font-size: 1.25rem;
+        }
+
+        .answer {
+            font-size: 1rem;
+        }
     }
 </style>

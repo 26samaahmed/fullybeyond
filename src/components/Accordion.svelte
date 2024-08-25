@@ -11,8 +11,8 @@
 
 </script>
 
-<button on:click={handleClick} class="accordion w-full shadow-md">
-    <div class="header w-full flex">
+<button on:click={handleClick} class="accordion w-full h-full shadow-md m-5">
+    <div class="header h-full w-full flex">
         <div class="text w-full p-4 flex items-center justify-between"
             style="border-bottom-left-radius: {open ? '0' : '2rem'}; border-bottom-right-radius: {open ? '0' : '2rem'};">
             <slot name="head"></slot>
@@ -23,7 +23,7 @@
     </div>
 
     {#if open}
-    <div class="details lg:h-90" transition:slide>
+    <div class="details" transition:slide>
         <slot name="details"></slot>
     </div>
     {/if}
@@ -35,14 +35,15 @@
     }
 
     button.accordion {
-        margin: 1.5rem;
+        /* margin: 1.5rem; */
         border-radius: 2rem;
         background-color: '#FFF3E5';
     }
       
     
     div.header .text {
-        flex: 1;
+        /* flex: 1; */
+        font-size: 0.5vw;
         padding: 1rem;
         background-color: #FFF3E5;
         border-radius: 2rem;
@@ -53,7 +54,7 @@
         background-color: #8ECDB0;
         align-items: center;
         padding: 1rem;
-        word-spacing: 0.5rem;
+        word-spacing: 0.5vw;
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
     }

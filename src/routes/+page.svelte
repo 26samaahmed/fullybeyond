@@ -3,7 +3,7 @@
     import Footer from '../components/Footer.svelte';
 </script>
 
-<main class="relative">
+<main class="w-screen">
     <FAQ/>
     <Footer/>
 </main>
