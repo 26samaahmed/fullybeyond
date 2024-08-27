@@ -63,7 +63,7 @@
     </div>
 
 
-		<div class="absolute bg-[#78BFCE] top-80 sm:top-96 md:top-full left-0 w-full h-lvh z-10">
+		<div class="absolute bg-[#78BFCE] top-80 sm:top-96 md:top-full left-0 w-full z-10">
 			<div class="absolute w-full grid items-center">
 				<img src={dark_waves} alt="Dark Waves" class="scale-150 object-cover w-full block absolute left-0 z-10" />
 				<img src={light_waves} alt="Light Waves" class="scale-150 w-full block absolute left-0 z-10" />

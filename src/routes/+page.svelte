@@ -4,15 +4,10 @@
 </script>
 
 <main>
+  <div class="pb-96 sm:pb-52 md:pb-5">
+    <Landing/>
+  </div>
+  
   <About/>
-  <Landing/>
 </main>
 
-
-<style>
-  main {
-      margin: 1rem;
-      font-size: 1.25rem;
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-    }
-</style>
