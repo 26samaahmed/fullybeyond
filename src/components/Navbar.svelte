@@ -6,8 +6,8 @@
 
 	let navBar = [
 		{ name: "Home", link: "/" },
-		{ name: "Event", link: "#event" },
 		{ name: "About", link: "#about" },
+		{ name: "Event", link: "#event" },
 		{ name: "FAQ", link: "#faq" }
 	];
 
