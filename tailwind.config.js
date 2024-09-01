@@ -1,10 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./src/**/*.{html,js,svelte,ts}'],
-
+module.exports = {
+  content: [
+    './src/**/*.{html,js,svelte,ts}',
+  ],
   theme: {
-      extend: {      
-        fontFamily: {
+    extend: {
+      fontFamily: {
         'm-plus-rounded': ['"M PLUS Rounded 1c"', 'sans-serif'],
       },
       fontWeight: {
@@ -19,5 +19,4 @@ export default {
     },
   },
   plugins: [],
-}
-
+}; 
