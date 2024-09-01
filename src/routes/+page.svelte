@@ -32,3 +32,13 @@
   <FAQ/>
   <Footer/>
 </main>
+
+<style>
+  main {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+</style>
