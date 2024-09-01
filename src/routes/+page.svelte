@@ -4,6 +4,8 @@
   import EventDetails from "../components/EventDetails.svelte"
   import Awards from "../components/Awards.svelte"
   import waves from '../lib/Assets/Awards/waves.png';
+  import Team from '../components/Team.svelte';
+  import Sponsors from '../components/Sponsors.svelte';
 </script>
 
 <main>
@@ -22,4 +24,7 @@
   <div class="relative z-20 bg-gradient-to-t from-[#FFB44E] to-[#A95271] pt-16 -mt-[2px]">
     <Awards />
   </div>
+
+  <Sponsors />
+  <Team />
 </main>
