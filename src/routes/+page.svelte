@@ -4,10 +4,9 @@
 </script>
 
 <main>
-  <div class="pb-96 sm:pb-52 md:pb-5">
+  <div class="flex flex-col space-y-96 sm:space-y-48 md:space-y-0">
     <Landing/>
+    <About/>
   </div>
-  
-  <About/>
 </main>
 

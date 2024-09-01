@@ -35,7 +35,7 @@
 
 
     <img class="w-24 sm:w-30 lg:w-36 py-5 " src="{lotus}" alt="lotus-flower"/>
-    <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 py-6">What Can We Look Forward To?</h1>
+    <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 py-6">What Can We Look Forward To?</h1>
     
 
     <div class="p-4 sm:p-6 md:p-8">
