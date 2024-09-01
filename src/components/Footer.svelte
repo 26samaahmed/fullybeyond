@@ -1,20 +1,13 @@
 <script>
-    import { onMount } from 'svelte';
-
-    let arrowUp, emailLogo, instagramLogo, linkedinLogo, tiktokLogo, water;
-    let leftLilypad, rightLilypad, frog;
-
-    onMount(() => {
-        arrowUp = "/lib/Assets/Footer/arrow.png";
-        emailLogo = "/lib/Assets/Footer/email_logo.png";
-        instagramLogo = "/lib/Assets/Footer/instagram_logo.png";
-        linkedinLogo = "/lib/Assets/Footer/linkedin_logo.png";
-        tiktokLogo = "/lib/Assets/Footer/tiktok_logo.png";
-        water = "/lib/Assets/Footer/water.png"
-        leftLilypad = "/lib/Assets/Footer/left_lilly_pad.png";
-        rightLilypad = "/lib/Assets/Footer/right_lilly_pad.png";
-        frog = "/lib/Assets/Footer/frog_with_backpack.png";
-    });
+    import arrowUp from "../lib/Assets/Footer/arrow.png";
+    import emailLogo from "../lib/Assets/Footer/email_logo.png";
+    import instagramLogo from "../lib/Assets/Footer/instagram_logo.png";
+    import linkedinLogo from "../lib/Assets/Footer/linkedin_logo.png";
+    import tiktokLogo from "../lib/Assets/Footer/tiktok_logo.png";
+    import water from "../lib/Assets/Footer/water.png"
+    import leftLilypad from "../lib/Assets/Footer/left_lilly_pad.png";
+    import rightLilypad from "../lib/Assets/Footer/right_lilly_pad.png";
+    import frog from "../lib/Assets/Footer/frog_with_backpack.png";
 
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -72,7 +65,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url('/lib/Assets/Footer/water.png');
+        background-image: url('../lib/Assets/Footer/water.png');
         background-size: cover;
         background-position: center;
         min-height: 100vh;

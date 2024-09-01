@@ -6,25 +6,12 @@
 </svelte:head>
 
 <script>
-    import { onMount } from 'svelte';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
+    import leftTree from '$lib/Assets/FAQ/left_tree.png';
+    import rightTree from '$lib/Assets/FAQ/right_tree.png';
+    import floor from '$lib/Assets/FAQ/dirt.png';
+    import grassBkgrnd from '$lib/Assets/FAQ/grass.png';
 
-    let leftTree, rightTree, floor, grassBkgrnd, bushLeft, bushRight, rightSmallFrog, ladybug, bushGroup, waterBkrnd;
-    let frogFly, bushesDirtFrog; 
-
-    onMount(() => {
-        leftTree = '/lib/Assets/FAQ/left_tree.png';
-        rightTree = '/lib/Assets/FAQ/right_tree.png';
-        floor = '/lib/Assets/FAQ/dirt.png';
-        // bushLeft = '/lib/Assets/FAQ/bush_left.png';
-        // bushRight = '/lib/Assets/FAQ/bush_right.png';
-        // rightSmallFrog = '/lib/Assets/FAQ/right_mini_frog.png';
-        // ladybug = '/lib/Assets/FAQ/ladybug.png';
-        bushGroup = '/lib/Assets/FAQ/bush_group.png';
-        grassBkgrnd = '/lib/Assets/FAQ/grass.png';
-        // frogFly = '/lib/Assets/FAQ/fully_the_frog_fly.png';
-        bushesDirtFrog = '/lib/Assets/FAQ/floor.png';
-    });
 
     let faqs = [
         { id: 1, question: "What is a designathon?", 

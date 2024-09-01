@@ -25,18 +25,18 @@
     import ryanpf from '../lib/Assets/Team/ryan.png';
 
     let team = [
-      { name: 'Yulie Ledesma', role: 'Marketing Officer', image: yuliepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'A.J.', role: 'Marketing Lead', image: ajpfp, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Jeffrey Rivera', role: 'Marketing Officer', image: jefferypf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Kristen Portillo', role: 'Director', image: kristenpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Tanishaa Naik', role: 'Marketing Officer', image: tanishapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Sama Ahmed', role: 'Web Dev Lead', image: samapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'A.J. Galliguez', role: 'Marketing Lead', image: ajpfp, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Ryan Avancena', role: 'Web Dev Officer', image: ryanpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Lori Cha', role: 'Web Dev & Marketing Officer', image: loripf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Richard Hoang', role: 'Design & Marketing Officer', image: richardpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Elzie', role: 'Design Officer', image: elziepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Oyinkansola Olayinka ', role: 'Web Dev & Marketing Officer', image: olapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Yulie Ledesma', role: 'Marketing Officer', image: yuliepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Tyler Lui', role: 'Web Dev Officer', image: tylerpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Ryan Avancena', role: 'Web Dev Officer', image: ryanpf, leafImageLeft: leafLeft, leafImageRight: leafRight}
+      { name: 'Elzie Mazuca', role: 'Design Officer', image: elziepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Tanishaa Naik', role: 'Marketing Officer', image: tanishapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Oyinkansola Olayinka ', role: 'Web Dev & Marketing Officer', image: olapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'Jeffrey Rivera', role: 'Marketing Officer', image: jefferypf, leafImageLeft: leafLeft, leafImageRight: leafRight}
     ];
 </script>
 
