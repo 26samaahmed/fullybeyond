@@ -49,7 +49,7 @@
 					<a href="/" class="text-2xl font-bold md:text-3xl px-5">
 						<img src={logo} alt="Fully Beyond" class="w-9 md:w-7" />
 					</a>
-					<h1 class="font-extrabold text-3xl sm:text-4xl md:text-xl md:mr-6">Fully Beyond</h1>
+					<h1 class="font-extrabold text-3xl sm:text-4xl md:text-xl md:mr-6">FullyBeyond</h1>
 
 
 					<div class="hidden md:flex md:border-[#D9D9D9] md:border-solid md:border-2 md:h-7 md:rounded lg:mr-12"></div>

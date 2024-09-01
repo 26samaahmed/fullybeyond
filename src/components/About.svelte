@@ -11,15 +11,15 @@
 
     <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 ">About US</h1>
     
-    <div class="flex flex-wrap flex-col  md:flex-row font-bold justify-center p-4 sm:p-5 md:p-8 w-full gap-4">
+    <div class="flex flex-wrap flex-col  md:flex-row p-4 sm:p-5 md:p-8 w-full gap-4">
         <div class="bg-[#F5ECDE] w-full md:w-full lg:w-3/5 h-auto rounded-3xl p-5 m-0 mt-3 md:m-5 max-w-screen-2xl">
-            <h2 class="text-[#959A25] text-2xl sm:text-3xl lg:text-4xl  ">What is FullyBeyond?</h2>
-            <p class="text-[#294105]  text-base md:text-lg lg:text-xl xl:text-2xl py-4">
-                Fully Beyond is the CSUF Designathon 2024 theme, inviting you to leapfrog conventional design thinking and explore the unexplored. 
+            <h2 class="text-[#959A25] text-2xl sm:text-3xl lg:text-4xl font-bold">What is FullyBeyond?</h2>
+            <p class="text-[#294105] text-base md:text-lg lg:text-xl xl:text-2xl py-4 font-normal text-left">
+                FullyBeyond is the CSUF Designathon 2024 theme, inviting you to leapfrog conventional design thinking and explore the unexplored. 
                 Here, we'll delve deep into the vibrant world of inclusivity and diversity as the cornerstones of our design process.
             </p>
 
-            <p class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#294105]">
+            <p class="text-base md:text-lg lg:text-xl xl:text-2xl text-[#294105] font-normal text-left">
                 Just like a lush rainforest teems with life, design flourishes when it embraces a variety of perspectives. 
                 We believe in empathy, equity, and celebrating differences. By going Fully Beyond, we can unlock the power of
                 design to shape a future that reflects the richness of our ever-evolving society.
