@@ -27,7 +27,7 @@
     let team = [
       { name: 'Kristen Portillo', role: 'Director', image: kristenpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Sama Ahmed', role: 'Web Dev Lead', image: samapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'A.J.', role: 'Marketing Lead', image: ajpfp, leafImageLeft: leafLeft, leafImageRight: leafRight},
+      { name: 'A.J. Galliguez', role: 'Marketing Lead', image: ajpfp, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Ryan Avancena', role: 'Web Dev Officer', image: ryanpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Lori Cha', role: 'Web Dev & Marketing Officer', image: loripf, leafImageLeft: leafLeft, leafImageRight: leafRight},
       { name: 'Richard Hoang', role: 'Design & Marketing Officer', image: richardpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
