@@ -6,6 +6,8 @@
   import waves from '../lib/Assets/Awards/waves.png';
   import Team from '../components/Team.svelte';
   import Sponsors from '../components/Sponsors.svelte';
+  import FAQ from '../components/FAQ.svelte';
+  import Footer from '../components/Footer.svelte';
 </script>
 
 <main>
@@ -27,4 +29,6 @@
 
   <Sponsors />
   <Team />
+  <FAQ/>
+  <Footer/>
 </main>
