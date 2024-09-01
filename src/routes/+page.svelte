@@ -1,12 +1,12 @@
-<svelte:head>
-  <title>FullyBeyond</title>
-</svelte:head>
-
-<script>
+<script>  
   import Landing from '../components/Landing.svelte';
+  import About  from "../components/About.svelte";
 </script>
 
 <main>
-
-  <Landing />
+  <div class="flex flex-col space-y-96 sm:space-y-48 md:space-y-0">
+    <Landing/>
+    <About/>
+  </div>
 </main>
+

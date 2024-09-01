@@ -39,8 +39,8 @@
 
 <main>
 	<NavBar />
-	<div class="relative">
-		<img src={sunset} alt="Sunset" class="scale-150 object-cover mt-36 mb-48 max-w-full md:scale-125 lg:scale-100 md:w-3/4 md:block md:mx-auto md:mt-28 lg:mt-16 md:left-0 md:z-0 sm:mt-52" />
+	<div class="relative w-full h-auto">
+		<img src={sunset} alt="Sunset" class="scale-150 max-w-screen mt-36 mb-48 max-w-full md:scale-125 lg:scale-100 md:w-3/4 md:block md:mx-auto md:mt-28 lg:mt-16 md:left-0 md:z-0 sm:mt-52" />
 		<img src={hills} alt="Hills" class="hidden md:w-full md:block md:ml-auto md:mr-auto md:left-0 md:absolute md:z-10 md:top-28" />
 		<img src={grass} alt="Grass" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:top-2/3 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:bottom-0 md:left-0 absolute z-10" />
 		<img src={side_leaves} alt="Side Leaves" class="hidden md:block md:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
@@ -63,10 +63,10 @@
     </div>
 
 
-		<div class="absolute bg-[#78BFCE] top-80 sm:top-96 md:top-full left-0 w-full h-lvh z-10">
+		<div class="absolute bg-[#78BFCE] top-80 sm:top-96 md:top-full left-0 w-full z-10">
 			<div class="absolute w-full grid items-center">
-				<img src={dark_waves} alt="Dark Waves" class="scale-150 object-cover w-full block absolute left-0 z-10" />
-				<img src={light_waves} alt="Light Waves" class="scale-150 w-full block absolute left-0 z-10" />
+				<img src={dark_waves} alt="Dark Waves" class="scale-150 max-w-screen w-full block absolute left-0 z-10" />
+				<img src={light_waves} alt="Light Waves" class="scale-150 max-w-screen block absolute left-0 z-10" />
 				<img src={lotus_on_lilly_pad2} alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:left-3" />
 				<img src={lotus_on_lilly_pad} alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:right-56 lg:right-64" />
 			</div>
@@ -75,7 +75,7 @@
 
 				{#each containers as containers}
 					<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
-						<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-20 absolute top-3 text-center bg-opacity-20 font-extrabold">{containers.title}</p>
+						<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">{containers.title}</p>
 						<span class="text-[#000000] text-3xl sm:text-xl lg:text-3xl font-extrabold absolute">{containers.description}</span>
 						<img src={containers.image} alt="Lilly Pad" class="absolute w-40 bottom-3 sm:w-28 md:w-40" />
 					</div>
