@@ -30,7 +30,7 @@
                 <a href="https://www.instagram.com/fullybeyond/" target="_blank" rel="noopener noreferrer">
                     <img src={instagramLogo} alt="Instagram logo">
                 </a>
-                <a href="fullybeyond2024@gmail.com">
+                <a href="mailto:fullybeyond2024@gmail.com">
                     <img src={emailLogo} alt="Email logo">
                 </a>
                 <a href="https://www.linkedin.com/company/fullybeyond" target="_blank" rel="noopener noreferrer">

@@ -40,23 +40,23 @@
 
 <main>
 	<NavBar />
-	<div class="relative w-full h-auto">
-		<img src={sunset} alt="Sunset" class="scale-150 max-w-screen mt-36 mb-48 max-w-full md:scale-125 lg:scale-100 md:w-3/4 md:block md:mx-auto md:mt-28 lg:mt-16 md:left-0 md:z-0 sm:mt-52" />
+	<div class="relative">
+		<img src={sunset} alt="Sunset" class="max-w-screen mt-12 mb-48 max-w-full sm:mt-8 md:w-3/4 md:block md:mx-auto md:mt-12 lg:mt-16 md:left-0 md:z-0" />
 		<img src={hills} alt="Hills" class="hidden md:w-full md:block md:ml-auto md:mr-auto md:left-0 md:absolute md:z-10 md:top-28" />
 		<img src={grass} alt="Grass" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:top-2/3 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:bottom-0 md:left-0 absolute z-10" />
 		<img src={side_leaves} alt="Side Leaves" class="hidden md:block md:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
-    <div id="center-introduction" class="absolute w-full flex flex-col items-center top-0 md:top-20 lg:top-36">
-        <span class="text-4xl w-80 text-[#FFE8C5] sm:w-full sm:text-4xl md:text-3xl lg:text-4xl z-10 font-extrabold text-center">
+    <div id="center-introduction" class="absolute w-full flex flex-col items-center top-12 sm:top-28 md:top-28 lg:top-36">
+        <span class="text-3xl w-72 text-[#FFE8C5] sm:w-full sm:text-3xl md:text-3xl lg:text-4xl z-10 font-extrabold text-center">
             FullyBeyond: Across the Pond
         </span>
-        <span class="text-2xl text-[#FFE8C5] md:text-2xl z-10 font-black mt-4 text-center">
+        <span class="text-xl text-[#FFE8C5] sm:text-2xl md:text-2xl z-10 font-black mt-4 text-center">
             CSUF's First Designathon
         </span>
-        <span class="text-2xl text-[#FFE8C5] md:text-2xl z-10 font-black mt-4 text-center">
+        <span class="text-xl text-[#FFE8C5] sm:text-2xl md:text-2xl z-10 font-black mt-4 text-center">
             November 9th - 10th
         </span>
 
-				<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-10 mt-10 z-20">
+				<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-14 mt-16 sm:mt-12 z-20">
 					<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light sm:mb-0 hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out">Apply Now!</button>
 					<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out"><a href={sponsor_package} target="_blank">Sponsor Us!</a></button>
 				</div>
@@ -64,15 +64,15 @@
     </div>
 
 
-		<div class="absolute bg-[#78BFCE] top-80 sm:top-96 md:top-full left-0 w-full z-10">
+		<div class="absolute bg-[#78BFCE] top-64 sm:top-96 md:top-full left-0 w-full z-10">
 			<div class="absolute w-full grid items-center">
-				<img src={dark_waves} alt="Dark Waves" class="scale-150 max-w-screen w-full block absolute left-0 z-10" />
-				<img src={light_waves} alt="Light Waves" class="scale-150 max-w-screen block absolute left-0 z-10" />
+				<img src={dark_waves} alt="Dark Waves" class="max-w-screen block absolute left-0 z-10" />
+				<img src={light_waves} alt="Light Waves" class="max-w-screen block absolute left-0 z-10" />
 				<img src={lotus_on_lilly_pad2} alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:left-3" />
 				<img src={lotus_on_lilly_pad} alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:right-56 lg:right-64" />
 			</div>
 
-			<div class="flex flex-col md:flex-row lg:flex-row items-center justify-center space-y-8 md:space-x-10 lg-space-x-20 md:space-y-0 mt-20 m-4">
+			<div class="flex flex-col md:flex-row lg:flex-row items-center justify-center space-y-8 md:space-x-10 lg-space-x-20 md:space-y-0 mt-44 sm:mt-20 m-4">
 
 				{#each containers as containers}
 					<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
@@ -97,7 +97,7 @@
   }
 
 	#center-introduction {
-    -webkit-text-stroke: 1.7px rgb(169, 82, 113);
+    -webkit-text-stroke: 1.5px rgb(169, 82, 113);
 }
 
 #center-introduction button:hover {

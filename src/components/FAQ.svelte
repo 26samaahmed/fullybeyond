@@ -171,12 +171,12 @@
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 2.5rem;
+            font-size: 4.5rem;
             letter-spacing: 0.25rem;
         }
 
         .question {
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
 
         .answer {

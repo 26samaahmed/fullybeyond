@@ -12,12 +12,17 @@
 
 <main>
   <div class="flex flex-col space-y-96 sm:space-y-48 md:space-y-0">
-    <Landing/>
-    <About class="#about"/>
+    <div id="home" class="bg-gradient-to-t from-[#FF9C5F] to-[#FFFFFF]">
+      <Landing/>
+    </div>
+
+    <div id="about" class="bg-[#78BFCE]">
+      <About/>
+    </div>
   </div>
 
-  <div class="relative bg-gradient-to-t from-[#EEE0E7] to-[#78BFCE] pb-52 pt-24"> 
-    <EventDetails class="#event"/>
+  <div class="relative bg-gradient-to-t from-[#EEE0E7] to-[#78BFCE] pb-52 pt-24" id="event"> 
+    <EventDetails/>
   </div>
   
   <div class="relative w-full h-[70px] overflow-hidden -mt-[50px]"> 
@@ -30,7 +35,9 @@
 
   <Sponsors />
   <Team />
-  <FAQ/>
+  <div id="faq">
+    <FAQ/>
+  </div>
   <Footer/>
 </main>
 
