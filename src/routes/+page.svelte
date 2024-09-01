@@ -1,6 +1,7 @@
-<svelte:head>
-  <title>FullyBeyond</title>
-</svelte:head>
+<script>  
+  import Landing from '../components/Landing.svelte';
+  import About  from "../components/About.svelte";
+</script>
 
 <script> 
   import Team from '../components/Team.svelte';
@@ -8,6 +9,9 @@
 </script>
 
 <main>
-  <Sponsors />
-  <Team />
+  <div class="flex flex-col space-y-96 sm:space-y-48 md:space-y-0">
+    <Landing/>
+    <About/>
+  </div>
 </main>
+
