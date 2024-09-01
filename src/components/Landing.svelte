@@ -16,6 +16,7 @@
 	import lotus_on_lilly_pad2 from '$lib/Assets/Landing/lotus_on_lilly_pad2.png';
 	import lilly_pad from '$lib/Assets/Landing/lilly_pad.png';
 	import opposite_lilly_pad from '$lib/Assets/Landing/opposite_lilly_pad.png';
+	import sponsor_package from '$lib/Assets/Landing/SponsorPackage.pdf';
 
 	let containers = [
 		{
@@ -56,8 +57,8 @@
         </span>
 
 				<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-10 mt-10 z-20">
-					<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light sm:mb-0 hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out">Apply Now!</button>
-					<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-4 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out">Sponsor Us!</button>
+					<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light sm:mb-0 hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out">Apply Now!</button>
+					<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out"><a href={sponsor_package} target="_blank">Sponsor Us!</a></button>
 				</div>
 				
     </div>

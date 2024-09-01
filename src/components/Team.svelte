@@ -40,8 +40,8 @@
     ];
 </script>
 
-<div class="h-400 gradient-background">
-  <div class="team text-center font-black text-5xl md:text-7xl lg:text-8xl mb-8">
+<div class="h-400 gradient-background pb-28">
+  <div class="team text-center font-black text-5xl md:text-7xl lg:text-8xl mb-8 pt-24">
     <h1> MEET OUR TEAM</h1>
   </div>
   <div class="team-grid ">
