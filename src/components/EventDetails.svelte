@@ -13,7 +13,7 @@
             <div class="flex max-w-56 lg:max-w-sm font-medium text-md lg:text-lg xl:text-2xl sm:text-md text-center sm:text-left mx-auto sm:mx-0 pt-2">
                 Here’s everything you’ll need to know for FullyBeyond!
             </div>
-            <img src={lotus} alt="Lotus " class="hidden sm:block w-full max-w-96 h-auto mt-5 mx-auto">
+            <img src={lotus} alt="Lotus " class="hidden sm:block w-full max-w-96 h-auto mt-5 mx-auto" loading="lazy">
         </div>
         <div class="p-2 sm:p-4">
             <div class="text-3xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl border-b-2 pb-2 sm:pb-1 border-[#6ED5A6] font-black text-[#D8A4B7]">
@@ -74,8 +74,8 @@
                 <br><br>
                 <span>Expect us to leap back to you within one business day. </span>
             </div>
-            <img src={fully_once_the_frog} alt="Fully Once" class=" h-40 mt-10 mx-auto sm:hidden">
-            <img src={funna} alt="Funna" class="h-40 my-10 mx-auto sm:hidden ">
+            <img src={fully_once_the_frog} alt="Fully Once" class=" h-40 mt-10 mx-auto sm:hidden" loading="lazy">
+            <img src={funna} alt="Funna" class="h-40 my-10 mx-auto sm:hidden " loading="lazy">
             
         </div>
     </div>

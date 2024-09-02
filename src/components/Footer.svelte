@@ -28,23 +28,23 @@
 
             <div class="social-media">
                 <a href="https://www.instagram.com/fullybeyond/" target="_blank" rel="noopener noreferrer">
-                    <img src={instagramLogo} alt="Instagram logo">
+                    <img src={instagramLogo} alt="Instagram logo" loading="lazy">
                 </a>
                 <a href="mailto:fullybeyond2024@gmail.com">
-                    <img src={emailLogo} alt="Email logo">
+                    <img src={emailLogo} alt="Email logo" loading="lazy">
                 </a>
                 <a href="https://www.linkedin.com/company/fullybeyond" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedinLogo} alt="LinkedIn logo">
+                    <img src={linkedinLogo} alt="LinkedIn logo" loading="lazy">
                 </a>
                 <a href="https://www.tiktok.com/fullybeyond" target="_blank" rel="noopener noreferrer">
-                    <img src={tiktokLogo} alt="TikTok logo">
+                    <img src={tiktokLogo} alt="TikTok logo" loading="lazy">
                 </a>
             </div>
 
             <div class='mt-24'>
                 <p>Need a lift back up?</p>
                 <button on:click={scrollToTop}>
-                    <img src={arrowUp} alt="Arrow up" />
+                    <img src={arrowUp} alt="Arrow up" loading="lazy" />
                 </button>
                 <p>Back to Top</p>
             </div>
