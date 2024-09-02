@@ -6,7 +6,7 @@
 
 <script>
 	import NavBar from './NavBar.svelte';
-  import sunset from '$lib/Assets/Landing/sunset.svg';
+  import sunset from '$lib/Assets/Landing/sunset.webp';
   import hills from '$lib/Assets/Landing/hills_background.svg';
   import grass from '$lib/Assets/Landing/layered_green.svg';
   import side_leaves from '$lib/Assets/Landing/side_leaves.svg';

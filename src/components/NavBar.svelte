@@ -13,7 +13,7 @@
 
 	let socialMedia = [
 		{ name: "Instagram", link: "https://www.instagram.com/fullybeyond/" , icon: instagram},
-		{ name: "Tiktok", link: "https://www.tiktok.com/fullybeyond", icon: tiktok },
+		{ name: "Tiktok", link: "https://www.tiktok.com/@fully_beyond?_t=8pMwFoxgwYc&_r=1", icon: tiktok },
 		{ name: "Linkedin", link: "https://www.linkedin.com/company/fullybeyond", icon: linkedin }
 	];
 

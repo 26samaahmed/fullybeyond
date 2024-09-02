@@ -32,7 +32,7 @@
                 <a href="https://www.linkedin.com/company/fullybeyond" target="_blank" rel="noopener noreferrer">
                     <img src={linkedinLogo} alt="LinkedIn logo" loading="lazy">
                 </a>
-                <a href="https://www.tiktok.com/fullybeyond" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.tiktok.com/@fully_beyond?_t=8pMwFoxgwYc&_r=1" target="_blank" rel="noopener noreferrer">
                     <img src={tiktokLogo} alt="TikTok logo" loading="lazy">
                 </a>
             </div>
