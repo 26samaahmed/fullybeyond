@@ -76,7 +76,7 @@
     <div class="faq-container">
         <img class="absolute hidden md:block left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src={leftTree} alt="Left Tree" loading="lazy"/>
         <img class="absolute hidden md:block right-0 top-0 h-1/2 lg:h-3/4 z-10" src={rightTree} alt="Right Tree" loading="lazy"/>
-        <img class="absolute top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background" loading="lazy"/>
+        <img class="absolute hidden md:block top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background" loading="lazy"/>
         <div class="content mt-[10vh] sm:mt-[40vh] z-30">
             <h1>FAQ</h1>
 
