@@ -10,18 +10,18 @@
     import TeamMember from './TeamMember.svelte';
     import leafLeft from '../lib/Assets/Team/left_leaf.png';
     import leafRight from '../lib/Assets/Team/right_leaf.png';
-    import ajpfp from '../lib/Assets/Team/AJ.jpeg';
-    import yuliepf from '../lib/Assets/Team/yulie.jpeg';
-    import jefferypf from '../lib/Assets/Team/jeffrey.jpeg';
-    import kristenpf from '../lib/Assets/Team/kristen.jpg';
-    import tanishapf from '../lib/Assets/Team/Tanisha.png';
-    import samapf from '../lib/Assets/Team/sama.jpg';
-    import loripf from '../lib/Assets/Team/lori.jpg';
-    import richardpf from '../lib/Assets/Team/richard.png';
-    import elziepf from '../lib/Assets/Team/elzie.jpeg';
-    import olapf from '../lib/Assets/Team/ola.jpeg';
-    import tylerpf from '../lib/Assets/Team/tyler.jpeg';
-    import ryanpf from '../lib/Assets/Team/ryan.png';
+    import ajpfp from '../lib/Assets/Team/AJ.webp';
+    import yuliepf from '../lib/Assets/Team/yulie.webp';
+    import jefferypf from '../lib/Assets/Team/jeffrey.webp';
+    import kristenpf from '../lib/Assets/Team/kristen.webp';
+    import tanishapf from '../lib/Assets/Team/tanisha.webp';
+    import samapf from '../lib/Assets/Team/sama.webp';
+    import loripf from '../lib/Assets/Team/lori.webp';
+    import richardpf from '../lib/Assets/Team/richard.webp';
+    import elziepf from '../lib/Assets/Team/elzie.webp';
+    import olapf from '../lib/Assets/Team/ola.webp';
+    import tylerpf from '../lib/Assets/Team/tyler.webp';
+    import ryanpf from '../lib/Assets/Team/ryan.webp';
 
     let team = [
       { name: 'Kristen Portillo', role: 'Director', image: kristenpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
