@@ -8,7 +8,7 @@
 </svelte:head>
 
 <script>
-    import sponsorRocks from '../lib/Assets/Sponsors/sponsor_rocks.png';
+    import sponsorRocks from '../lib/Assets/Sponsors/sponsor_rocks.svg';
     import sponsorTitle from '../lib/Assets/Sponsors/sponsor_title.png';
 </script>
 

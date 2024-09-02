@@ -1,7 +1,7 @@
 <script>
     import reward_placeholder from '../lib/Assets/Awards/reward_placeholder.png';
-    import left_cloud from '../lib/Assets/Awards/left_cloud.png';
-    import right_cloud from '../lib/Assets/Awards/right_cloud.png';
+    import left_cloud from '../lib/Assets/Awards/left_cloud.svg';
+    import right_cloud from '../lib/Assets/Awards/right_cloud.svg';
 </script>
 
 <div class=" text-6xl lg:text-6xl xl:text-7xl font-extrabold text-center text-[#FFE8C5] md:mt-2 lg:mt-0 xl:mt-0 2xl:mt-4">AWARDS</div>

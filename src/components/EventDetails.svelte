@@ -1,7 +1,7 @@
 <script>
-    import fully_once_the_frog from '../lib/Assets/EventDetails/fully_once_the_frog.png';
-    import funna from '../lib/Assets/EventDetails/funna.png';
-    import lotus from '../lib/Assets/EventDetails/lotus.png';
+    import fully_once_the_frog from '../lib/Assets/EventDetails/fully_once_the_frog.svg';
+    import funna from '../lib/Assets/EventDetails/funna.svg';
+    import lotus from '../lib/Assets/EventDetails/lotus.svg';
 </script>
 <div class="font-m-plus-rounded box-border h-auto sm:w-3/4 max-w-7xl mx-0 sm:mx-auto p-4 border-2 bg-[#F5ECDE] rounded-2xl ">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
