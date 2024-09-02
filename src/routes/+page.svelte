@@ -35,7 +35,7 @@
 
   <Sponsors />
   <Team />
-  <div id="faq" class="hidden md:block">
+  <div id="faq">
     <FAQ/>
   </div>
   <Footer/>
