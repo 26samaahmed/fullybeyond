@@ -40,11 +40,11 @@
 
 					<!-- Hamburger Menu -->
 					<button on:click={toggleMenu} class="flex md:hidden lg:hidden">
-						<button type="button" class="text-gray-800 hover:text-[#A95271] focus:outline-none focus:text-[#A95271]">
-							<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-9 h-9">
 								<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-						</button>
+						</svg>
 					</button>
+
 
 					<a href="/" class="text-2xl font-bold md:text-3xl px-5">
 						<img src={logo} alt="Fully Beyond" class="w-9 md:w-7" loading="lazy"/>
