@@ -74,8 +74,10 @@
                 <br><br>
                 <span>Expect us to leap back to you within one business day. </span>
             </div>
-            <img src={fully_once_the_frog} alt="Fully Once" class=" h-40 mt-10 mx-auto sm:hidden" loading="lazy">
-            <img src={funna} alt="Funna" class="h-40 my-10 mx-auto sm:hidden " loading="lazy">
+            <!--
+                <img src={fully_once_the_frog} alt="Fully Once" class=" h-40 mt-10 mx-auto sm:hidden" loading="lazy">
+                <img src={funna} alt="Funna" class="h-40 my-10 mx-auto sm:hidden " loading="lazy">
+            -->
             
         </div>
     </div>

@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="relative bg-gradient-to-t from-[#EEE0E7] to-[#78BFCE] pb-52 pt-24" id="event"> 
+  <div class="relative bg-gradient-to-t from-[#EEE0E7] to-[#78BFCE] pb-24 pt-24" id="event"> 
     <EventDetails/>
   </div>
   
@@ -35,7 +35,7 @@
 
   <Sponsors />
   <Team />
-  <div id="faq">
+  <div id="faq" class="hidden md:block">
     <FAQ/>
   </div>
   <Footer/>
