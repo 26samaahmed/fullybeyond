@@ -12,9 +12,9 @@
 
 <main>
   <div class="flex flex-col space-y-96 sm:space-y-48 md:space-y-0">
-    <div id="home" class="bg-gradient-to-t from-[#FF9C5F] to-[#FFFFFF]">
-      <Landing/>
-    </div>
+  <div id="home" class="bg-gradient-to-t from-[#FF9C5F] to-[#FFFFFF]">
+    <Landing/>
+  </div>
 
     <div id="about" class="bg-[#78BFCE]">
       <About/>

@@ -36,7 +36,4 @@
         border-width: 20px;
       }
     }
-    * {
-      font-family: "M PLUS Rounded 1c", sans-serif;
-    }
 </style>

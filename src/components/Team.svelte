@@ -92,8 +92,5 @@
       max-width: 300px;
       text-align: center
     }
-    * {
-      font-family: "M PLUS Rounded 1c", sans-serif;
-    }
 </style>
   

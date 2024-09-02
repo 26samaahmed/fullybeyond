@@ -31,7 +31,4 @@
     .gradient-background {
         background: linear-gradient(to bottom, #FEB350, #97D2DD);
     }
-    * {
-        font-family: "M PLUS Rounded 1c", sans-serif;
-        }
 </style>

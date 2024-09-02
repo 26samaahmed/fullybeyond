@@ -89,12 +89,6 @@
 </main>
 
 <style>
-  main {
-		font-family: "M PLUS Rounded 1c", sans-serif;
-    /* Ensure the main tag takes the full height of the component */
-    height: 100%;
-    width: 100%;
-  }
 
 	#center-introduction {
     -webkit-text-stroke: 1.5px rgb(169, 82, 113);
