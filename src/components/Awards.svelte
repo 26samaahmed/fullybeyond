@@ -3,6 +3,13 @@
     import left_cloud from '../lib/Assets/Awards/left_cloud.png';
     import right_cloud from '../lib/Assets/Awards/right_cloud.png';
 </script>
+
+<div class=" text-6xl lg:text-6xl xl:text-7xl font-extrabold text-center text-[#FFE8C5] md:mt-2 lg:mt-0 xl:mt-0 2xl:mt-4">AWARDS</div>
+<div class='flex justify-center items-center mt-20'>
+    <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold text-center text-[#FFE8C5]">Coming Soon!</h1>
+</div>
+<!-- 
+
 <div class="font-m-plus-rounded box-border h-auto sm:w-3/4 max-w-7xl mx-0 sm:mx-auto rounded-2xl">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-14 mt-0">
         <div class="order-2 lg:order-1">
@@ -77,3 +84,4 @@
 
     </div>
 </div>
+ -->
