@@ -17,7 +17,7 @@
         <img src={sponsorTitle} alt="Sponsors" loading="lazy"/>
     </div>
       
-    <div class='flex justify-center items-center mt-20'>
+    <div class='flex justify-center items-center mt-10 pb-20'>
         <h1 class="text-5xl lg:text-6xl xl:text-7xl font-bold text-center text-[#FFFFFF]">Coming Soon!</h1>
     </div>
     <!--
