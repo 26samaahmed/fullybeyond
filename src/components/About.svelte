@@ -1,6 +1,6 @@
 <script>
     import lotus from "../lib/Assets/About/lotus.svg";
-    import fully_the_frog_fly from  "../lib/Assets/FAQ/fully_the_frog_fly.png";
+    import fully_the_frog_fly from  "../lib/Assets/FAQ/fully_the_frog_fly.svg";
     import funna from "../lib/Assets/EventDetails/funna.svg";
     import fully_once_the_frog from "../lib/Assets/EventDetails/fully_once_the_frog.svg";
     import acmlogo from "../lib/Assets/About/acmlogo.svg"

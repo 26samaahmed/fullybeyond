@@ -7,8 +7,8 @@
 
 <script>
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
-    import leftTree from '$lib/Assets/FAQ/left_tree.png';
-    import rightTree from '$lib/Assets/FAQ/right_tree.png';
+    import leftTree from '$lib/Assets/FAQ/left_tree.svg';
+    import rightTree from '$lib/Assets/FAQ/right_tree.svg';
     import floor from '$lib/Assets/FAQ/dirt.png';
     import grassBkgrnd from '$lib/Assets/FAQ/grass.png';
 

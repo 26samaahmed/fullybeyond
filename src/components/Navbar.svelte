@@ -1,5 +1,5 @@
 <script>
-  import logo from '$lib/Assets/Landing/logo.png';
+  import logo from '$lib/Assets/Landing/logo.svg';
   import instagram from '$lib/Assets/Landing/instagram.png';
   import tiktok from '$lib/Assets/Landing/tiktok.png';
   import linkedin from '$lib/Assets/Landing/linkedin.png';

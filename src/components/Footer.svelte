@@ -4,10 +4,6 @@
     import instagramLogo from "../lib/Assets/Footer/instagram_logo.png";
     import linkedinLogo from "../lib/Assets/Footer/linkedin_logo.png";
     import tiktokLogo from "../lib/Assets/Footer/tiktok_logo.png";
-    import water from "../lib/Assets/Footer/water.png"
-    import leftLilypad from "../lib/Assets/Footer/left_lilly_pad.png";
-    import rightLilypad from "../lib/Assets/Footer/right_lilly_pad.png";
-    import frog from "../lib/Assets/Footer/frog_with_backpack.png";
 
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });

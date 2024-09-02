@@ -8,14 +8,14 @@
 	import NavBar from './NavBar.svelte';
   import sunset from '$lib/Assets/Landing/sunset.png';
   import hills from '$lib/Assets/Landing/hills_background.png';
-  import grass from '$lib/Assets/Landing/layered_green.png';
-  import side_leaves from '$lib/Assets/Landing/side_leaves.png';
+  import grass from '$lib/Assets/Landing/layered_green.svg';
+  import side_leaves from '$lib/Assets/Landing/side_leaves.svg';
   import light_waves from '$lib/Assets/Landing/light_waves.png';
   import dark_waves from '$lib/Assets/Landing/dark_waves.png';
-	import lotus_on_lilly_pad from '$lib/Assets/Landing/lotus_on_lilly_pad.png';
-	import lotus_on_lilly_pad2 from '$lib/Assets/Landing/lotus_on_lilly_pad2.png';
-	import lilly_pad from '$lib/Assets/Landing/lilly_pad.png';
-	import opposite_lilly_pad from '$lib/Assets/Landing/opposite_lilly_pad.png';
+	import lotus_on_lilly_pad from '$lib/Assets/Landing/lotus_on_lilly_pad.svg';
+	import lotus_on_lilly_pad2 from '$lib/Assets/Landing/lotus_on_lilly_pad2.svg';
+	import lilly_pad from '$lib/Assets/Landing/lilly_pad.svg';
+	import opposite_lilly_pad from '$lib/Assets/Landing/opposite_lilly_pad.svg';
 	import sponsor_package from '$lib/Assets/Landing/SponsorPackage.pdf';
 
 	let containers = [

@@ -10,7 +10,6 @@
     import TeamMember from './TeamMember.svelte';
     import leafLeft from '../lib/Assets/Team/left_leaf.png';
     import leafRight from '../lib/Assets/Team/right_leaf.png';
-    import blankpfp from '../lib/Assets/Team/pfp.png';
     import ajpfp from '../lib/Assets/Team/AJ.jpeg';
     import yuliepf from '../lib/Assets/Team/yulie.jpeg';
     import jefferypf from '../lib/Assets/Team/jeffrey.jpeg';
