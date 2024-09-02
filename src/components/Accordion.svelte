@@ -45,13 +45,11 @@
         /* flex: 1; */
         font-size: 0.5vw;
         padding: 1rem;
-        background-color: #FFF3E5;
         border-radius: 2rem;
         transition: border-radius 0.3s ease;
     }
 
     div.details {
-        background-color: #8ECDB0;
         align-items: center;
         padding: 1rem;
         word-spacing: 0.5vw;

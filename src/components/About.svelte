@@ -12,8 +12,7 @@
     <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase text-[#6BD1A9] stroke-5 ">About US</h1>
     
     <div class="flex flex-wrap flex-col  md:flex-row p-4 sm:p-5 md:p-8 w-full gap-4">
-        <div class="bg-[var(--main-bg-color)] w-full md:w-full lg:w-3/5 h-auto rounded-3xl p-5 m-0 mt-3 md:m-5 max-w-screen-2xl">
-            <h2 class="text-[var(--heading-color)] text-2xl sm:text-3xl lg:text-4xl font-bold">What is FullyBeyond?</h2>
+        <div class="w-full md:w-full lg:w-3/5 h-auto rounded-3xl p-5 m-0 mt-3 md:m-5 max-w-screen-2xl">
             <p class="text-[var(--main-text-color)] text-base md:text-lg lg:text-xl xl:text-2xl py-4 font-normal text-left">
                 FullyBeyond is the CSUF Designathon 2024 theme, inviting you to leapfrog conventional design thinking and explore the unexplored. 
                 Here, we'll delve deep into the vibrant world of inclusivity and diversity as the cornerstones of our design process.
@@ -58,9 +57,7 @@
 
 <style>
     :root {
-        --main-bg-color: #F5ECDE;
         --main-text-color: #294105;
-        --heading-color: #959A25;
     } 
   
     .stroke-5 {
