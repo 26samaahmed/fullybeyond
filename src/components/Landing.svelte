@@ -43,7 +43,7 @@
 	<div class="relative">
 		<img src={sunset} alt="Sunset" loading="lazy" class="max-w-screen mt-12 mb-48 max-w-full sm:mt-8 md:w-3/4 md:block md:mx-auto md:mt-12 lg:mt-16 md:left-0 md:z-0" />
 		<img src={hills} alt="Hills" loading="lazy" class="hidden md:w-full md:block md:ml-auto md:mr-auto md:left-0 md:absolute md:z-10 md:top-28" />
-		<img src={grass} alt="Grass" loading="lazy" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:top-2/3 md:scale-100 md:w-full md:block md:ml-auto md:mr-auto md:bottom-0 md:left-0 absolute z-10" />
+		<img src={grass} alt="Grass" loading="lazy" class="hidden max-w-full top-64 object-cover sm:top-3/4 md:top-2/3 md:w-full md:block md:ml-auto md:mr-auto md:bottom-0 md:left-0 absolute z-10" />
 		<img src={side_leaves} alt="Side Leaves" loading="lazy" class="hidden md:block md:w-1/3 md:ml-auto md:mr-auto md:top-24 md:right-0 md:absolute z-30" />
     <div id="center-introduction" class="absolute w-full flex flex-col items-center top-12 sm:top-28 md:top-28 lg:top-36">
         <span class="text-3xl w-72 text-[#FFE8C5] sm:w-full sm:text-3xl md:text-3xl lg:text-4xl z-10 font-extrabold text-center">
