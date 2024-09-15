@@ -49,7 +49,7 @@
 					<img src={side_leaves} alt="Side Leaves" loading="lazy" class="hidden md:block md:w-1/3 md:absolute md:z-30 md:top-24 md:right-0" />
 			</div>
 			<div id="center-introduction" class="absolute w-full flex flex-col items-center top-12 sm:top-28 md:top-28 lg:top-44 z-20">
-					<span class="text-3xl w-72 text-[#FFE8C5] sm:w-full sm:text-3xl md:text-3xl lg:text-4xl font-extrabold text-center">
+					<span class="text-3xl w-72 text-[#FFE8C5] sm:w-full sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center">
 							FullyBeyond: Across the Pond
 					</span>
 					<span class="text-xl text-[#FFE8C5] sm:text-2xl md:text-2xl lg:text-2xl font-black mt-4 text-center">

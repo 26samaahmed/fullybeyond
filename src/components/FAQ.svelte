@@ -6,12 +6,8 @@
 </svelte:head>
 
 <script>
+    import { writable } from 'svelte/store';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
-    import leftTree from '$lib/Assets/FAQ/left_tree.svg';
-    import rightTree from '$lib/Assets/FAQ/right_tree.svg';
-    import floor from '$lib/Assets/FAQ/dirt.svg';
-    import grassBkgrnd from '$lib/Assets/FAQ/grass.svg';
-
 
     let faqs = [
         { id: 1, question: "What is a designathon?", 
@@ -56,36 +52,23 @@
         }
     ];
 
-    let accordions = faqs.map(faq => ({ ...faq, open: false }));
+    // Store to manage open accordion state
+    const openAccordionId = writable(null);
 
     const handleToggle = (id) => {
-        const isCurrentlyOpen = accordions.find(a => a.id === id).open;
-
-        // Update all accordions to ensure only one is open
-        accordions = accordions.map(a => {
-            if (a.id === id) {
-                return { ...a, open: !isCurrentlyOpen };
-            } else {
-                return { ...a, open: false };
-            }
-        });
+        openAccordionId.update(currentId => currentId === id ? null : id);
     }
 </script>
 
 <main>
     <div class="faq-container">
-        <!--
-        <img class="absolute hidden md:block left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src={leftTree} alt="Left Tree" loading="lazy"/>
-        <img class="absolute hidden md:block right-0 top-0 h-1/2 lg:h-3/4 z-10" src={rightTree} alt="Right Tree" loading="lazy"/>
-        <img class="absolute top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background" loading="lazy"/>
-        -->
         <div class="content z-30">
             <h1>FAQ</h1>
 
             <div class="accordion-container">
-                {#each accordions as { id, question, answer, open }}
+                {#each faqs as { id, question, answer }}
                     <Accordion
-                        open={open} 
+                        open={$openAccordionId === id}
                         on:toggle={() => handleToggle(id)}
                     >
                         <span class="question" slot="head">{question}</span>
@@ -96,10 +79,9 @@
                 {/each}
             </div>
         </div>
-        <!-- <img class="absolute w-screen z-20 bottom-0" src={bushGroup} alt="bushes"/> -->
-        <img class="relative w-screen z-10 bottom-0 pt-32" src={floor} alt="floor" loading="lazy"/>
     </div>
 </main>
+
 
 <style>
     .faq-container {
