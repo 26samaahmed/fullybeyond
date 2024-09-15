@@ -18,13 +18,13 @@
             <!-- SVG icon changes depending on the 'open' state -->
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d={open ? "M19 9l-7 7-7-7" : "M5 15l7-7 7 7"} />
-            </svg>
+                      d={open ? "M19 9l-7 7-7-7" : "M5 15l7-7 7 7"} />
+            </svg>            
         </div>
     </div>
 
     {#if open}
-    <div class="details" transition:slide={{ duration: 150 }}>
+    <div class="details" transition:slide={{ duration: 100 }}>
         <slot name="details"></slot>
     </div>
     {/if}
@@ -67,4 +67,12 @@
         border-bottom-left-radius: 2rem;
         border-bottom-right-radius: 2rem;
     }
+
+    @supports (-webkit-touch-callout: none) {
+    /* Disable or simplify transitions only for Safari */
+    .details {
+        transition: none !important; /* Disable transition for Safari */
+        }
+    }
+
 </style>
