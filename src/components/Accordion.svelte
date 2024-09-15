@@ -25,7 +25,7 @@
     </div>
 
     {#if open}
-    <div class="details" transition:slide={{ duration: 100 }}>
+    <div class="details" transition:slide={{ duration: 50 }}>
         <slot name="details"></slot>
     </div>
     {/if}

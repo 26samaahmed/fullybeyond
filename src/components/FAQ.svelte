@@ -8,6 +8,11 @@
 <script>
     import { writable } from 'svelte/store';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
+    import leftTree from '$lib/Assets/FAQ/left_tree.svg';
+    import rightTree from '$lib/Assets/FAQ/right_tree.svg';
+    import floor from '$lib/Assets/FAQ/dirt.svg';
+    import grassBkgrnd from '$lib/Assets/FAQ/grass.svg';
+
 
     let faqs = [
         { id: 1, question: "What is a designathon?", 
@@ -52,7 +57,7 @@
         }
     ];
 
-    // Store to manage open accordion state
+     // Store to manage open accordion state
     const openAccordionId = writable(null);
 
     const handleToggle = (id) => {
@@ -79,9 +84,9 @@
                 {/each}
             </div>
         </div>
+        <img class="relative w-screen z-10 bottom-0 pt-32" src={floor} alt="floor" loading="lazy"/>
     </div>
 </main>
-
 
 <style>
     .faq-container {
