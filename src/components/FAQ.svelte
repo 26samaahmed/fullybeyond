@@ -74,10 +74,12 @@
 
 <main>
     <div class="faq-container">
+        <!--
         <img class="absolute hidden md:block left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src={leftTree} alt="Left Tree" loading="lazy"/>
         <img class="absolute hidden md:block right-0 top-0 h-1/2 lg:h-3/4 z-10" src={rightTree} alt="Right Tree" loading="lazy"/>
         <img class="absolute top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background" loading="lazy"/>
-        <div class="content mt-[10vh] sm:mt-[40vh] z-30">
+        -->
+        <div class="content z-30">
             <h1>FAQ</h1>
 
             <div class="accordion-container">
@@ -131,19 +133,10 @@
     h1 {
         font-size: 6rem;
         font-weight: 900;
-        color: #B5F7DD;
+        color: #1C8B82;
         letter-spacing: 0.5rem;
         text-align: center;
-        text-shadow:
-            -0.3vw -0.3vw 0 #1C8B82,
-            0   -0.3vw 0 #1C8B82,
-            0.3vw -0.3vw 0 #1C8B82,
-            0.3vw  0   0 #1C8B82,
-            0.3vw 0.3vw 0 #1C8B82,
-            0    0.3vw 0 #1C8B82,
-            -0.3vw  0.3vw 0 #1C8B82,
-            -0.3vw  0   0 #1C8B82;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .accordion-container {
