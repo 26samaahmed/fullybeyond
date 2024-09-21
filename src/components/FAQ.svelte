@@ -8,8 +8,8 @@
 <script>
     import { writable } from 'svelte/store';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
-    import leftTree from '$lib/Assets/FAQ/left_tree.svg';
-    import rightTree from '$lib/Assets/FAQ/right_tree.svg';
+    import leftTree from '$lib/Assets/FAQ/left_tree.webp';
+    import rightTree from '$lib/Assets/FAQ/right_tree.webp';
     import floor from '$lib/Assets/FAQ/dirt.svg';
     import grassBkgrnd from '$lib/Assets/FAQ/grass.svg';
 

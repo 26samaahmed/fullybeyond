@@ -1,9 +1,9 @@
 <script>
-    import arrowUp from "../lib/Assets/Footer/arrow.png";
-    import emailLogo from "../lib/Assets/Footer/email_logo.png";
-    import instagramLogo from "../lib/Assets/Footer/instagram_logo.png";
-    import linkedinLogo from "../lib/Assets/Footer/linkedin_logo.png";
-    import tiktokLogo from "../lib/Assets/Footer/tiktok_logo.png";
+    import arrowUp from "../lib/Assets/Footer/arrow.webp";
+    import emailLogo from "../lib/Assets/Footer/email_logo.webp";
+    import instagramLogo from "../lib/Assets/Footer/instagram_logo.webp";
+    import linkedinLogo from "../lib/Assets/Footer/linkedin_logo.webp";
+    import tiktokLogo from "../lib/Assets/Footer/tiktok_logo.webp";
 
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
