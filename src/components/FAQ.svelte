@@ -17,14 +17,11 @@
     let faqs = [
         { id: 1, question: "What is a designathon?", 
             answer: `A designathon is an intensive event where participants work solo or in teams to design, develop, and present innovative solutions 
-            to specific challenges within a set timeframe. It's similar to a hackathon but focuses on the design process (UX and UI, product design, and creative problem-solving). 
-            Participants can expect to collaborate, learn new skills, find friends, network, and receive mentorship from industry experts.`},
+            to specific challenges within a set timeframe.`},
         
         { id: 2, question: "How do I participate?", 
             answer: `Visit our registration google form at [link] and follow the 
-            instructions on the form. Registering is completely free as this is a free event. 
-            You should receive a confirmation email upon submitting your information. Follow the 
-            instructions on the email to complete your registration and prepare for FullyBeyond!` },
+            instructions on the form.` },
 
         { id: 3, question: "How do I join the FullyBeyond Discord?", 
             answer: ` Once you have been accepted into FullyBeyond after registering yourself 
@@ -33,15 +30,11 @@
         { id: 4, question: "Do I need a team to participate?", 
             answer: ` Your team can have a minimum of 1 member (yes, you can participate solo!) 
             to a maximum of 4 members. If you don't have a team, don't worry! You can find others like you 
-            looking for a team to work with on our discord! \nOnce you find your team, there will be a form in Discord 
-            that 1 person on your team must fill in to officially register your team 
-            before the start of the event.` },
+            looking for a team to work with on our discord!` },
 
         { id: 5, question: "What resources are available for participants?", 
             answer: `We created a Participant Guide handbook [link] for those who are 
-            completely new to Designathons and need a push in the right direction. 
-            If you have any questions, please drop any concerns or 
-            questions under the #questions chat in the Discord channel.` },
+            completely new to Designathons and need a push in the right direction.` },
         
         { id: 6, question: "Where is the event?", 
             answer: "Fullybeyond is a virtual event held on Discord!" },
@@ -52,8 +45,7 @@
 
         { id: 8, question: "How are submissions evaluated?", 
             answer: `Your submissions are evaluated based on how well you visually present 
-            and verbally explain the concept of your solution, user research, and your design process. 
-            More details will be presented on Discord.`
+            and verbally explain the concept of your solution, user research, and your design process.`
         }
     ];
 
@@ -101,9 +93,11 @@
         background-position: center;
     }
 
+    /*
     .absolute {
         object-fit: cover;
     }
+        */
 
     .content {
         display: flex;
