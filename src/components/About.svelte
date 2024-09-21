@@ -1,9 +1,9 @@
 <script>
-    import lotus from "../lib/Assets/About/lotus.svg";
+    import lotus from "../lib/Assets/About/lotus.webp";
     import fully_the_frog_fly from  "../lib/Assets/FAQ/fully_the_frog_fly.svg";
     import funna from "../lib/Assets/EventDetails/funna.svg";
     import fully_once_the_frog from "../lib/Assets/EventDetails/fully_once_the_frog.svg";
-    import acmlogo from "../lib/Assets/About/acmlogo.svg"
+    import acmlogo from "../lib/Assets/About/acmlogo.webp"
 </script>
 
 <main class="flex flex-col items-center justify-center text-center p-4 sm:p-6 md:p-8 pt-12">
@@ -43,7 +43,7 @@
             </div>
             <div class="bg-[#B5E8FF] border-4 font-bold border-white rounded-2xl w-full h-[410px] flex flex-col justify-center items-center  hover:scale-105 transform hover:bg-[#9DCCE4] hover:border-[#83B0CC] transition-transform duration-300">
                 <img class="w-full h-3/4 object-contain p-4 sm:p-5 lg:max-h-52 xl:max-h-none max-h-208px" src="{fully_once_the_frog}" alt="fully_once_the_frog" loading="lazy">
-                <p class="m-0 text-[#114674]  text-xl sm:text-2xl px-2.5 text-center"><span>Clash for top prices from our </span>sponsors</p>
+                <p class="m-0 text-[#114674]  text-xl sm:text-2xl px-2.5 text-center"><span>Clash for top prizes from our </span>sponsors</p>
             </div>
             <div class="bg-[#B5E8FF] border-4 font-bold border-white rounded-2xl w-full h-[410px] flex flex-col justify-center items-center  hover:scale-105 transform hover:bg-[#9DCCE4] hover:border-[#83B0CC] transition-transform duration-300">
                 <img class="w-full h-3/4 object-contain p-4 sm:p-5 lg:max-h-52 xl:max-h-none max-h-208px" src="{funna}" alt="funna" loading="lazy">

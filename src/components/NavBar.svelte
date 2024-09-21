@@ -1,8 +1,8 @@
 <script>
-  import logo from '$lib/Assets/Landing/logo.svg';
-  import instagram from '$lib/Assets/Landing/instagram.svg';
-  import tiktok from '$lib/Assets/Landing/tiktok.svg';
-  import linkedin from '$lib/Assets/Landing/linkedin.svg';
+  import logo from '$lib/Assets/Landing/logo.webp';
+  import instagram from '$lib/Assets/Landing/instagram.webp';
+  import tiktok from '$lib/Assets/Landing/tiktok.webp';
+  import linkedin from '$lib/Assets/Landing/linkedin.webp';
 
 	let navBar = [
 		{ name: "Home", link: "/" },
