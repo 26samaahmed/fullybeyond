@@ -14,7 +14,7 @@
 
 <div class="h-400 gradient-background">
     <div class='flex justify-center items-center mb-8'>
-        <img src={sponsorTitle} alt="Sponsors" loading="lazy"/>
+        <img src={sponsorTitle} alt="Sponsors"/>
     </div>
       
     <div class='flex justify-center items-center mt-10 pb-20'>

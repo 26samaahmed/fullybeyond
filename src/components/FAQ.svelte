@@ -76,7 +76,7 @@
                 {/each}
             </div>
         </div>
-        <img class="relative w-screen z-10 bottom-0 pt-32" src={floor} alt="floor" loading="lazy"/>
+        <img class="relative w-screen z-10 bottom-0 pt-32" src={floor} alt="floor"/>
     </div>
 </main>
 
