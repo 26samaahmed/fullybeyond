@@ -59,7 +59,7 @@
 							<img src='/Assets/Landing/lotus_on_lilly_pad2.webp' alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:left-3" />
 							<img src='/Assets/Landing/lotus_on_lilly_pad.webp' alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:right-56 lg:right-64" />
 					</div>
-					<div class="flex flex-col md:flex-row lg:flex-row items-center justify-center space-y-8 md:space-x-10 lg:space-x-20 md:space-y-0 mt-44 sm:mt-20 m-4 p-10">
+					<div class="flex flex-col md:flex-row lg:flex-row items-center justify-center space-y-8 md:space-x-10 lg:space-x-20 md:space-y-0 mt-44 sm:mt-20 m-4 md:p-10">
 							{#each containers as container}
 									<div class="border-dashed border-8 border-[#89CAD8] w-72 md:w-80 lg:w-80 h-52 relative flex items-center justify-center">
 											<p class="bg-[#CDF6FF] text-sm md:text-m p-2 rounded-md w-24 absolute top-3 text-center bg-opacity-20 font-extrabold">{container.title}</p>

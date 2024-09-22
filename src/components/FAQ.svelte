@@ -55,10 +55,10 @@
 
 <main>
     <div class="faq-container">
-        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/left_tree.webp" alt="Left Tree"/>
-        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/right_tree.webp" alt="Right Tree"/>
+        <img class="hidden md:block absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/left_tree.webp" alt="Left Tree"/>
+        <img class="hidden md:block absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/right_tree.webp" alt="Right Tree"/>
         <img class="absolute top-0 left-0 h-full z-0" src="/Assets/FAQ/grass.webp" alt="background"/>
-        <div class="content mt-[40vh] sm:mt-[40vh] z-30">
+        <div class="content mt-[10vh] sm:mt-[40vh] z-30">
             <h1>FAQ</h1>
             <div class="accordion-container">
                 {#each faqs as { id, question, answer, open }}
@@ -167,7 +167,7 @@
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 2.5rem;
+            font-size: 4rem;
             letter-spacing: 0.25rem;
         }
 
