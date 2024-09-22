@@ -1,9 +1,4 @@
 <script>
-  import logo from '$lib/Assets/Landing/logo.webp';
-  import instagram from '$lib/Assets/Landing/instagram.webp';
-  import tiktok from '$lib/Assets/Landing/tiktok.webp';
-  import linkedin from '$lib/Assets/Landing/linkedin.webp';
-
 	let navBar = [
 		{ name: "Home", link: "/" },
 		{ name: "About", link: "#about" },
@@ -12,9 +7,9 @@
 	];
 
 	let socialMedia = [
-		{ name: "Instagram", link: "https://www.instagram.com/fullybeyond/" , icon: instagram},
-		{ name: "Tiktok", link: "https://www.tiktok.com/@fully_beyond?_t=8pMwFoxgwYc&_r=1", icon: tiktok },
-		{ name: "Linkedin", link: "https://www.linkedin.com/company/fullybeyond", icon: linkedin }
+		{ name: "Instagram", link: "https://www.instagram.com/fullybeyond/" , icon: '/Assets/Landing/instagram.webp'},
+		{ name: "Tiktok", link: "https://www.tiktok.com/@fully_beyond?_t=8pMwFoxgwYc&_r=1", icon: '/Assets/Landing/tiktok.webp' },
+		{ name: "Linkedin", link: "https://www.linkedin.com/company/fullybeyond", icon: '/Assets/Landing/linkedin.webp' }
 	];
 
 	let showMenu = false;
@@ -47,7 +42,7 @@
 
 
 					<a href="/" class="text-2xl font-bold md:text-3xl px-5">
-						<img src={logo} alt="Fully Beyond" class="w-9 md:w-7"/>
+						<img src='/Assets/Landing/logo.webp' alt="Fully Beyond" class="w-9 md:w-7"/>
 					</a>
 					<h1 class="font-extrabold text-3xl sm:text-4xl md:text-xl md:mr-6">FullyBeyond</h1>
 

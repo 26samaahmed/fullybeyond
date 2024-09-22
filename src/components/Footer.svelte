@@ -1,10 +1,4 @@
 <script>
-    import arrowUp from "../lib/Assets/Footer/arrow.webp";
-    import emailLogo from "../lib/Assets/Footer/email_logo.webp";
-    import instagramLogo from "../lib/Assets/Footer/instagram_logo.webp";
-    import linkedinLogo from "../lib/Assets/Footer/linkedin_logo.webp";
-    import tiktokLogo from "../lib/Assets/Footer/tiktok_logo.webp";
-
     function scrollToTop() {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
@@ -24,23 +18,23 @@
 
             <div class="social-media">
                 <a href="https://www.instagram.com/fullybeyond/" target="_blank" rel="noopener noreferrer">
-                    <img src={instagramLogo} alt="Instagram logo">
+                    <img src="/Assets/Footer/instagram_logo.webp" alt="Instagram logo">
                 </a>
                 <a href="mailto:fullybeyond2024@gmail.com">
-                    <img src={emailLogo} alt="Email logo">
+                    <img src="/Assets/Footer/email_logo.webp" alt="Email logo">
                 </a>
                 <a href="https://www.linkedin.com/company/fullybeyond" target="_blank" rel="noopener noreferrer">
-                    <img src={linkedinLogo} alt="LinkedIn logo">
+                    <img src="/Assets/Footer/linkedin_logo.webp" alt="LinkedIn logo">
                 </a>
                 <a href="https://www.tiktok.com/@fully_beyond?_t=8pMwFoxgwYc&_r=1" target="_blank" rel="noopener noreferrer">
-                    <img src={tiktokLogo} alt="TikTok logo">
+                    <img src="/Assets/Footer/tiktok_logo.webp" alt="TikTok logo">
                 </a>
             </div>
 
             <div class='mt-24'>
                 <p>Need a lift back up?</p>
                 <button on:click={scrollToTop}>
-                    <img src={arrowUp} alt="Arrow up"/>
+                    <img src="/Assets/Footer/arrow.webp" alt="Arrow up"/>
                 </button>
                 <p>Back to Top</p>
             </div>
@@ -54,7 +48,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-image: url('../lib/Assets/Footer/water.png');
+        background-image: url('/Assets/Footer/water.png');
         background-size: cover;
         background-position: center;
         min-height: 100vh;

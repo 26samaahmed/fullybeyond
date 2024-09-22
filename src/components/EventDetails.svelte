@@ -1,8 +1,3 @@
-<script>
-    import fully_once_the_frog from '../lib/Assets/EventDetails/fully_once_the_frog.svg';
-    import funna from '../lib/Assets/EventDetails/funna.svg';
-    import lotus from '../lib/Assets/EventDetails/lotus.svg';
-</script>
 <div class="font-m-plus-rounded box-border h-auto sm:w-3/4 max-w-7xl mx-0 sm:mx-auto p-4 md:border-2 md:bg-[#F5ECDE] rounded-2xl ">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="sm:border-r-2 mt-5 sm:border-[#6ED5A6] sm:pr-4 "> <!-- Add border to the right -->
@@ -13,7 +8,7 @@
             <div class="flex max-w-56 lg:max-w-sm font-medium text-md lg:text-lg xl:text-2xl sm:text-md text-center sm:text-left mx-auto sm:mx-0 pt-2">
                 Here’s everything you’ll need to know for FullyBeyond!
             </div>
-            <img src={lotus} alt="Lotus " class="hidden sm:block w-full max-w-96 h-auto mt-5 mx-auto">
+            <img src="/Assets/EventDetails/lotus.svg" alt="Lotus " class="hidden sm:block w-full max-w-96 h-auto mt-5 mx-auto">
         </div>
         <div class="p-2 sm:p-4">
             <div class="text-3xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl border-b-2 pb-2 sm:pb-1 border-[#6ED5A6] font-black text-[#D8A4B7]">
@@ -74,10 +69,6 @@
                 <br><br>
                 <span>Expect us to leap back to you within one business day. </span>
             </div>
-            <!--
-                <img src={fully_once_the_frog} alt="Fully Once" class=" h-40 mt-10 mx-auto sm:hidden" loading="lazy">
-                <img src={funna} alt="Funna" class="h-40 my-10 mx-auto sm:hidden " loading="lazy">
-            -->
             
         </div>
     </div>

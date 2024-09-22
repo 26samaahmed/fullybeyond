@@ -6,33 +6,22 @@
 
 <script>
 	import NavBar from './NavBar.svelte';
-  import sunset from '$lib/Assets/Landing/sunset.webp';
-  import hills from '$lib/Assets/Landing/hills_background.webp';
-  import grass from '$lib/Assets/Landing/layered_green.svg';
-  import side_leaves from '$lib/Assets/Landing/side_leaves.webp';
-  import light_waves from '$lib/Assets/Landing/light_waves.png';
-  import dark_waves from '$lib/Assets/Landing/dark_waves.png';
-	import lotus_on_lilly_pad from '$lib/Assets/Landing/lotus_on_lilly_pad.webp';
-	import lotus_on_lilly_pad2 from '$lib/Assets/Landing/lotus_on_lilly_pad2.webp';
-	import lilly_pad from '$lib/Assets/Landing/lilly_pad.webp';
-	import opposite_lilly_pad from '$lib/Assets/Landing/opposite_lilly_pad.webp';
-	import sponsor_package from '$lib/Assets/Landing/SponsorPackage.pdf';
 
 	let containers = [
 		{
 			title: "DATE",
 			description: "NOV. 9 - NOV. 10",
-			image: lilly_pad
+			image: '/Assets/Landing/lilly_pad.webp'
 		},
 		{
 			title: "DURATION",
 			description: "24 HOURS",
-			image: opposite_lilly_pad
+			image: '/Assets/Landing/opposite_lilly_pad.webp'
 		},
 		{
 			title: "LOCATION",
 			description: "VIRTUAL",
-			image: lilly_pad
+			image: '/Assets/Landing/lilly_pad.webp'
 		}
 	];
 	
@@ -43,10 +32,10 @@
 	<div class="relative">
 			<!-- Use a wrapper with absolute positioning for layered images -->
 			<div class="relative">
-					<img src={sunset} alt="Sunset" class="max-w-screen mt-12 mb-48 max-w-full sm:mt-8 md:w-3/4 md:mx-auto md:mt-12 lg:mt-16" />
-					<img src={hills} alt="Hills" class="hidden md:block md:w-full md:absolute md:z-10 md:top-28" />
-					<img src={grass} alt="Grass" class="hidden md:block md:w-full md:absolute md:z-10 md:top-2/3" />
-					<img src={side_leaves} alt="Side Leaves" class="hidden md:block md:w-1/3 md:absolute md:z-30 md:top-24 md:right-0" />
+					<img src='/Assets/Landing/sunset.webp' alt="Sunset" class="max-w-screen mt-12 mb-48 max-w-full sm:mt-8 md:w-3/4 md:mx-auto md:mt-12 lg:mt-16" />
+					<img src='/Assets/Landing/hills_background.webp' alt="Hills" class="hidden md:block md:w-full md:absolute md:z-10 md:top-28" />
+					<img src="/Assets/Landing/layered_green.svg" alt="Grass" class="hidden md:block md:w-full md:absolute md:z-10 md:top-2/3" />
+					<img src='/Assets/Landing/side_leaves.webp' alt="Side Leaves" class="hidden md:block md:w-1/3 md:absolute md:z-30 md:top-24 md:right-0" />
 			</div>
 			<div id="center-introduction" class="absolute w-full flex flex-col items-center top-12 sm:top-28 md:top-28 lg:top-44 z-20">
 					<span class="text-3xl w-72 text-[#FFE8C5] sm:w-full sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold text-center">
@@ -60,15 +49,15 @@
 					</span>
 					<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-14 mt-16 sm:mt-12">
 							<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out z-20">Apply Now!</button>
-							<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out z-20"><a href={sponsor_package} target="_blank">Sponsor Us!</a></button>
+							<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out z-20"><a href='/Assets/Landing/SponsorPackage.pdf' target="_blank">Sponsor Us!</a></button>
 					</div>
 			</div>
 			<div class="absolute bg-[#78BFCE] top-64 sm:top-96 md:top-full left-0 w-full z-10">
 					<div class="absolute w-full grid items-center">
-							<img src={dark_waves} alt="Dark Waves" class="max-w-screen block absolute left-0 z-10" />
-							<img src={light_waves} alt="Light Waves" class="max-w-screen block absolute left-0 z-10" />
-							<img src={lotus_on_lilly_pad2} alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:left-3" />
-							<img src={lotus_on_lilly_pad} alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:right-56 lg:right-64" />
+							<img src='/Assets/Landing/dark_waves.png' alt="Dark Waves" class="max-w-screen block absolute left-0 z-10" />
+							<img src='/Assets/Landing/light_waves.png' alt="Light Waves" class="max-w-screen block absolute left-0 z-10" />
+							<img src='/Assets/Landing/lotus_on_lilly_pad2.webp' alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:left-3" />
+							<img src='/Assets/Landing/lotus_on_lilly_pad.webp' alt="Lotus on Lilly Pad" class="hidden md:block md:w-28 lg:w-36 absolute md:z-20 md:bottom-0 md:right-56 lg:right-64" />
 					</div>
 					<div class="flex flex-col md:flex-row lg:flex-row items-center justify-center space-y-8 md:space-x-10 lg:space-x-20 md:space-y-0 mt-44 sm:mt-20 m-4 p-10">
 							{#each containers as container}

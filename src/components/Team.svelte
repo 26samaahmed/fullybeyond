@@ -8,34 +8,20 @@
 
 <script>
     import TeamMember from './TeamMember.svelte';
-    import leafLeft from '../lib/Assets/Team/left_leaf.png';
-    import leafRight from '../lib/Assets/Team/right_leaf.png';
-    import ajpfp from '../lib/Assets/Team/AJ.webp';
-    import yuliepf from '../lib/Assets/Team/yulie.webp';
-    import jefferypf from '../lib/Assets/Team/jeffrey.webp';
-    import kristenpf from '../lib/Assets/Team/kristen.webp';
-    import tanishapf from '../lib/Assets/Team/tanisha.webp';
-    import samapf from '../lib/Assets/Team/sama.webp';
-    import loripf from '../lib/Assets/Team/lori.webp';
-    import richardpf from '../lib/Assets/Team/richard.webp';
-    import elziepf from '../lib/Assets/Team/elzie.webp';
-    import olapf from '../lib/Assets/Team/ola.webp';
-    import tylerpf from '../lib/Assets/Team/tyler.webp';
-    import ryanpf from '../lib/Assets/Team/ryan.webp';
 
     let team = [
-      { name: 'Kristen Portillo', role: 'Director', image: kristenpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Sama Ahmed', role: 'Web Dev Lead', image: samapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'A.J. Galliguez', role: 'Marketing Lead', image: ajpfp, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Ryan Avancena', role: 'Web Dev Officer', image: ryanpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Lori Cha', role: 'Web Dev & Marketing Officer', image: loripf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Richard Hoang', role: 'Design & Marketing Officer', image: richardpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Yulie Ledesma', role: 'Marketing Officer', image: yuliepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Tyler Lui', role: 'Web Dev Officer', image: tylerpf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Elzie Mazuca', role: 'Design Officer', image: elziepf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Tanishaa Naik', role: 'Marketing Officer', image: tanishapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Oyinkansola Olayinka ', role: 'Web Dev & Marketing Officer', image: olapf, leafImageLeft: leafLeft, leafImageRight: leafRight},
-      { name: 'Jeffrey Rivera', role: 'Marketing Officer', image: jefferypf, leafImageLeft: leafLeft, leafImageRight: leafRight}
+      { name: 'Kristen Portillo', role: 'Director', image: '/Assets/Team/kristen.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Sama Ahmed', role: 'Web Dev Lead', image: '/Assets/Team/sama.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'A.J. Galliguez', role: 'Marketing Lead', image: '/Assets/Team/AJ.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Ryan Avancena', role: 'Web Dev Officer', image: '/Assets/Team/ryan.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Lori Cha', role: 'Web Dev & Marketing Officer', image: '/Assets/Team/lori.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Richard Hoang', role: 'Design & Marketing Officer', image: '/Assets/Team/richard.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Yulie Ledesma', role: 'Marketing Officer', image: '/Assets/Team/yulie.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Tyler Lui', role: 'Web Dev Officer', image: '/Assets/Team/tyler.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Elzie Mazuca', role: 'Design Officer', image: '/Assets/Team/elzie.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Tanishaa Naik', role: 'Marketing Officer', image: '/Assets/Team/tanisha.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Oyinkansola Olayinka ', role: 'Web Dev & Marketing Officer', image: '/Assets/Team/ola.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Jeffrey Rivera', role: 'Marketing Officer', image: '/Assets/Team/jeffrey.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'}
     ];
 </script>
 

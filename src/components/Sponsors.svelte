@@ -1,5 +1,3 @@
-<!-- Sponsors.svelte -->
-
 <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,14 +5,10 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </svelte:head>
 
-<script>
-    import sponsorRocks from '../lib/Assets/Sponsors/sponsor_rocks.svg';
-    import sponsorTitle from '../lib/Assets/Sponsors/sponsor_title.png';
-</script>
 
 <div class="h-400 gradient-background">
     <div class='flex justify-center items-center mb-8'>
-        <img src={sponsorTitle} alt="Sponsors"/>
+        <img src='/Assets/Sponsors/sponsor_title.png' alt="Sponsors"/>
     </div>
       
     <div class='flex justify-center items-center mt-10 pb-20'>
@@ -22,7 +16,7 @@
     </div>
     <!--
     <div class='flex justify-center items-center'>
-        <img src={sponsorRocks} alt="Sponsors" loading="lazy"/>
+        <img src="/Assets/Sponsors/sponsor_rocks.svg" alt="Sponsors" loading="lazy"/>
     </div>
     -->
 </div>

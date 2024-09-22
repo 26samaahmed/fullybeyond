@@ -8,10 +8,6 @@
 <script>
     import { writable } from 'svelte/store';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
-    import leftTree from '$lib/Assets/FAQ/left_tree.webp';
-    import rightTree from '$lib/Assets/FAQ/right_tree.webp';
-    import floor from '$lib/Assets/FAQ/dirt.svg';
-    import grassBkgrnd from '$lib/Assets/FAQ/grass.svg';
 
 
     let faqs = [
@@ -59,9 +55,9 @@
 
 <main>
     <div class="faq-container">
-        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src={leftTree} alt="Left Tree"/>
-        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src={rightTree} alt="Right Tree"/>
-        <img class="absolute top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background"/>
+        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/left_tree.webp" alt="Left Tree"/>
+        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/right_tree.webp" alt="Right Tree"/>
+        <img class="absolute top-0 left-0 h-full z-0" src="/Assets/FAQ/grass.svg" alt="background"/>
         <div class="content mt-[40vh] sm:mt-[40vh] z-30">
             <h1>FAQ</h1>
             <div class="accordion-container">
@@ -77,7 +73,7 @@
                 {/each}
             </div>
         </div>
-        <img class="relative w-screen z-10 bottom-0 pt-32" src={floor} alt="floor"/>
+        <img class="relative w-screen z-10 bottom-0 pt-32" src="/Assets/FAQ/dirt.svg" alt="floor"/>
     </div>
 </main>
 
