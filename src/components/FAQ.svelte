@@ -55,9 +55,9 @@
 
 <main>
     <div class="faq-container">
-        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/left_tree.webp" alt="Left Tree" loading="lazy"/>
-        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/right_tree.webp" alt="Right Tree" loading="lazy"/>
-        <img class="absolute top-0 left-0 h-full z-0" src="/Assets/FAQ/grass.svg" alt="background" loading="lazy"/>
+        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/left_tree.webp" alt="Left Tree"/>
+        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src="/Assets/FAQ/right_tree.webp" alt="Right Tree"/>
+        <img class="absolute top-0 left-0 h-full z-0" src="/Assets/FAQ/grass.png" alt="background"/>
         <div class="content mt-[40vh] sm:mt-[40vh] z-30">
             <h1>FAQ</h1>
             <div class="accordion-container">
@@ -73,7 +73,7 @@
                 {/each}
             </div>
         </div>
-        <img class="relative w-screen z-10 bottom-0 pt-32" src="/Assets/FAQ/dirt.svg" alt="floor" loading="lazy"/>
+        <img class="relative w-screen z-10 bottom-0 pt-32" src="/Assets/FAQ/dirt.png" alt="floor"/>
     </div>
 </main>
 

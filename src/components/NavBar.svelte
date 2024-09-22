@@ -1,5 +1,5 @@
 <script>
-	let navBar = [
+let navBar = [
 		{ name: "Home", link: "/" },
 		{ name: "About", link: "#about" },
 		{ name: "Event", link: "#event" },
@@ -42,7 +42,7 @@
 
 
 					<a href="/" class="text-2xl font-bold md:text-3xl px-5">
-						<img src='/Assets/Landing/logo.webp' alt="Fully Beyond" class="w-9 md:w-7" loading="lazy"/>
+						<img src='/Assets/Landing/logo.webp' alt="Fully Beyond" class="w-9 md:w-7"/>
 					</a>
 					<h1 class="font-extrabold text-3xl sm:text-4xl md:text-xl md:mr-6">FullyBeyond</h1>
 
@@ -61,7 +61,7 @@
 					<div class="hidden md:flex items-center space-x-4 px-4">
 						{#each socialMedia as item}
 							<a href={item.link} target="_blank">
-								<img src={item.icon} alt={item.name} class="w-8 md:w-7" loading="lazy"/>
+								<img src={item.icon} alt={item.name} class="w-8 md:w-7"/>
 							</a>
 						{/each}
 					</div>

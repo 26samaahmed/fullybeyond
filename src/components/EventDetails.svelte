@@ -8,7 +8,7 @@
             <div class="flex max-w-56 lg:max-w-sm font-medium text-md lg:text-lg xl:text-2xl sm:text-md text-center sm:text-left mx-auto sm:mx-0 pt-2">
                 Here’s everything you’ll need to know for FullyBeyond!
             </div>
-            <img src="/Assets/EventDetails/lotus.svg" alt="Lotus " class="hidden sm:block w-full max-w-96 h-auto mt-5 mx-auto" loading="lazy">
+            <img src="/Assets/EventDetails/lotus.svg" alt="Lotus " class="hidden sm:block w-full max-w-96 h-auto mt-5 mx-auto">
         </div>
         <div class="p-2 sm:p-4">
             <div class="text-3xl sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl border-b-2 pb-2 sm:pb-1 border-[#6ED5A6] font-black text-[#D8A4B7]">

@@ -18,23 +18,23 @@
 
             <div class="social-media">
                 <a href="https://www.instagram.com/fullybeyond/" target="_blank" rel="noopener noreferrer">
-                    <img src="/Assets/Footer/instagram_logo.webp" alt="Instagram logo" loading="lazy">
+                    <img src="/Assets/Footer/instagram_logo.webp" alt="Instagram logo" >
                 </a>
                 <a href="mailto:fullybeyond2024@gmail.com">
-                    <img src="/Assets/Footer/email_logo.webp" alt="Email logo" loading="lazy">
+                    <img src="/Assets/Footer/email_logo.webp" alt="Email logo">
                 </a>
                 <a href="https://www.linkedin.com/company/fullybeyond" target="_blank" rel="noopener noreferrer">
-                    <img src="/Assets/Footer/linkedin_logo.webp" alt="LinkedIn logo" loading="lazy">
+                    <img src="/Assets/Footer/linkedin_logo.webp" alt="LinkedIn logo">
                 </a>
                 <a href="https://www.tiktok.com/@fully_beyond?_t=8pMwFoxgwYc&_r=1" target="_blank" rel="noopener noreferrer">
-                    <img src="/Assets/Footer/tiktok_logo.webp" alt="TikTok logo" loading="lazy">
+                    <img src="/Assets/Footer/tiktok_logo.webp" alt="TikTok logo">
                 </a>
             </div>
 
             <div class='mt-24'>
                 <p>Need a lift back up?</p>
                 <button on:click={scrollToTop}>
-                    <img src="/Assets/Footer/arrow.webp" alt="Arrow up" loading="lazy"/>
+                    <img src="/Assets/Footer/arrow.webp" alt="Arrow up"/>
                 </button>
                 <p>Back to Top</p>
             </div>
