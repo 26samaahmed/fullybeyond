@@ -8,7 +8,7 @@
 
 <div class="h-400 gradient-background">
     <div class='flex justify-center items-center mb-8'>
-        <img src='/Assets/Sponsors/sponsor_title.png' alt="Sponsors"/>
+        <img src='/Assets/Sponsors/sponsor_title.png' alt="Sponsors" loading="lazy"/>
     </div>
       
     <div class='flex justify-center items-center mt-10 pb-20'>
