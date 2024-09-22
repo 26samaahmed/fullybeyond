@@ -59,20 +59,21 @@
 
 <main>
     <div class="faq-container">
-        <div class="content z-30">
+        <img class="absolute left-0 top-0 h-1/2 sm:h-1/2 lg:h-3/4 z-10" src={leftTree} alt="Left Tree"/>
+        <img class="absolute right-0 top-0 h-1/2 lg:h-3/4 z-10" src={rightTree} alt="Right Tree"/>
+        <img class="absolute top-0 left-0 h-full z-0" src={grassBkgrnd} alt="background"/>
+        <div class="content mt-[40vh] sm:mt-[40vh] z-30">
             <h1>FAQ</h1>
-
             <div class="accordion-container">
-                {#each faqs as { id, question, answer }}
-                    <Accordion
-                        open={$openAccordionId === id}
-                        on:toggle={() => handleToggle(id)}
-                    >
-                        <span class="question" slot="head">{question}</span>
-                        <div slot="details">
+                {#each faqs as { id, question, answer, open }}
+                    <div class='questionBox'>
+                        <div class='questionHead'>
+                            <span class="question">{question}</span>
+                        </div>
+                        <div class="details">
                             <p class="answer">{answer}</p>
                         </div>
-                    </Accordion>
+                    </div>
                 {/each}
             </div>
         </div>
@@ -81,6 +82,13 @@
 </main>
 
 <style>
+    main {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
     .faq-container {
         position: relative;
         display: flex;
@@ -88,16 +96,13 @@
         align-items: center;
         min-height: 100vh;
         background-color: #C2FAE9;
-        /* background: linear-gradient(to bottom, #959A25, #01641C); */
         background-size: cover;
         background-position: center;
     }
 
-    /*
     .absolute {
         object-fit: cover;
     }
-        */
 
     .content {
         display: flex;
@@ -106,24 +111,32 @@
         justify-content: center;
         width: 90%;
         max-width: 1200px;
-        /* margin-top: 20%; */
-        /* margin-top: 50vh; */
         padding: 0 2rem;
     }
 
     h1 {
         font-size: 6rem;
         font-weight: 900;
-        color: #1C8B82;
+        color: #B5F7DD;
         letter-spacing: 0.5rem;
         text-align: center;
-        margin-bottom: 0.5rem;
+        text-shadow:
+            -0.3vw -0.3vw 0 #1C8B82,
+            0   -0.3vw 0 #1C8B82,
+            0.3vw -0.3vw 0 #1C8B82,
+            0.3vw  0   0 #1C8B82,
+            0.3vw 0.3vw 0 #1C8B82,
+            0    0.3vw 0 #1C8B82,
+            -0.3vw  0.3vw 0 #1C8B82,
+            -0.3vw  0   0 #1C8B82;
+        margin-bottom: 2rem;
     }
 
     .accordion-container {
         width: 100%;
         max-width: 1200px;
         margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .question {
@@ -131,19 +144,39 @@
         font-weight: bold;
     }
 
+    .questionHead {
+        width: 100%;
+        background-color: white;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        padding: 1rem;
+    }
+
+    .questionBox {
+        margin-bottom: 2rem;
+        width: 100%;
+        background-color: #8ECDB0;
+        padding-bottom: 1rem;
+        border-radius: 2rem;
+    }
+
     .answer {
         font-size: 1.25rem;
         font-weight: normal;
     }
 
+    .details {
+        padding: 1rem;
+    }
+
     @media (max-width: 768px) {
         h1 {
-            font-size: 4.5rem;
+            font-size: 2.5rem;
             letter-spacing: 0.25rem;
         }
 
         .question {
-            font-size: 1rem;
+            font-size: 1.25rem;
         }
 
         .answer {

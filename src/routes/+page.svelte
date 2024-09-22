@@ -38,9 +38,7 @@
   <div id="faq">
     <FAQ/>
   </div>
-  <!--
   <Footer/>
-  -->
 </main>
 
 <style>
