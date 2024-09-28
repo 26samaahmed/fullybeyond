@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</svelte:head>
+
 <main class="flex flex-col items-center justify-center text-center p-4 sm:p-6 md:p-8 pt-12">
     <img class="w-24 sm:w-30 lg:w-36 py-5 pt-40" src="/Assets/About/lotus.webp" alt="lotus-flower"/>
 

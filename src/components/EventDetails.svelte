@@ -1,3 +1,7 @@
+<svelte:head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</svelte:head>
+
 <div class="font-m-plus-rounded box-border h-auto sm:w-3/4 max-w-7xl mx-0 sm:mx-auto p-4 md:border-2 md:bg-[#F5ECDE] rounded-2xl ">
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="sm:border-r-2 mt-5 sm:border-[#6ED5A6] sm:pr-4 "> <!-- Add border to the right -->
