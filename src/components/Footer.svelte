@@ -38,6 +38,7 @@
                 <p>Back to Top</p>
             </div>
         </div>
+        <span class="text-center mt-5 text-lg md:text-2xl">© 2024 FullyBeyond. All rights reserved.</span>
     </div>
 </main>
 

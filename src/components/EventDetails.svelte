@@ -27,7 +27,7 @@
                 <span>At this time, we are only accepting students in the US and you must enroll using a .edu email. We are a beginner-friendly event so beginners are encouraged to apply!</span>
                 <br><br>
                 <span>Register </span>
-                <span class="font-black">here</span>
+                <span class="font-black"><a href="/" target="_blank" style="text-decoration: underline">here</a></span>
                 <span> and stay tuned for your email confirmation to ensure your registration.</span>
                 <br><br>
             </div>

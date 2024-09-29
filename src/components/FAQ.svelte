@@ -13,7 +13,7 @@
             to specific challenges within a set timeframe.`},
         
         { id: 2, question: "How do I participate?", 
-            answer: `Visit our registration google form at [link] and follow the 
+            answer: `Visit our registration google form <a href="/" target="_blank" style="text-decoration: underline">here</a> and follow the 
             instructions on the form.` },
 
         { id: 3, question: "How do I join the FullyBeyond Discord?", 
@@ -25,9 +25,9 @@
             to a maximum of 4 members. If you don't have a team, don't worry! You can find others like you 
             looking for a team to work with on our discord!` },
 
-        { id: 5, question: "What resources are available for participants?", 
-            answer: `We created a Participant Guide handbook [link] for those who are 
-            completely new to Designathons and need a push in the right direction.` },
+        { id: 5, question: "What resources are available for participants?",
+            answer: `We created a Participant Guide handbook <a href="/Assets/FAQ/Participant_Guide.pdf" target="_blank" style="text-decoration: underline">here</a> for those who are completely new to Designathons and need a push in the right direction.`
+        },
         
         { id: 6, question: "Where is the event?", 
             answer: "Fullybeyond is a virtual event held on Discord!" },
@@ -59,15 +59,16 @@
             <h1>FAQ</h1>
             <div class="accordion-container">
                 {#each faqs as { id, question, answer, open }}
-                    <div class='questionBox'>
-                        <div class='questionHead'>
-                            <span class="question">{question}</span>
-                        </div>
-                        <div class="details">
-                            <p class="answer">{answer}</p>
-                        </div>
+                <div class='questionBox'>
+                    <div class='questionHead'>
+                        <span class="question">{question}</span>
                     </div>
-                {/each}
+                    <div class="details">
+                        <p class="answer">{@html answer}</p> <!-- Correct usage of {@html} -->
+                    </div>
+                </div>
+            {/each}
+            
             </div>
         </div>
         <img class="relative w-screen z-10 bottom-0 pt-32" src="/Assets/FAQ/dirt.webp" alt="floor"/>
