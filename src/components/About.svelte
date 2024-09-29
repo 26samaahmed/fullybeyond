@@ -17,7 +17,7 @@
             <br><br>
                 This year, we are excited to introduce <b>FullyBeyond</b>, our first-ever designathon, which extends our ongoing initiative to bring
                 together participants from diverse backgrounds and tackle real- world challenges, encouraging <b>creativity, collaboration, and personal growth.</b>
-                <b>FullyBeyond</b> marks the beginning of a new chapter in our efforts to cultivate the next generation of leaders at CSUF
+                <b>FullyBeyond</b> marks the beginning of a new chapter in our efforts to cultivate the next generation of leaders at CSUF.
             </p>
         </div>        
 
