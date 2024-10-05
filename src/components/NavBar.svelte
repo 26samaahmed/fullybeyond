@@ -56,7 +56,7 @@ let navBar = [
 					<!--Show the nav bar items here but hide them on mobile since they show when I click on the burger menu-->
 					<div class="hidden md:flex md:items-center md:space-x-6 px-3">
 						{#each navBar as item}
-							<a href={item.link} on:click|preventDefault={scrollIntoView}  class="font-medium text-xl md:text-lg hover:text-[#A95271] transition-all duration-100 ease-in-out">{item.name}</a>
+							<a href={item.link} on:click|preventDefault={scrollIntoView}  class="font-medium text-xl md:text-lg hover:text-[#A95271] transition-all duration-300 ease-in-out">{item.name}</a>
 						{/each}
 					</div>
 

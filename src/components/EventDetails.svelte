@@ -22,12 +22,12 @@
                 <div class="mb-1">REGISTRATION</div>
             </div>
             <div class="max-w-lg font-regular text-wrap text-xl sm:text-sm md:text-xl lg:text-2xl" >
-                <span>Hey designers! Registrations start on Oct. 5th @ 12 AM and close on Oct. 26th @ 11:59 PM. </span>
+                <span>Hey designers! Registrations start on Oct. 9th @ 12 AM and close on Oct. 30th @ 11:59 PM. </span>
                 <br><br>
                 <span>At this time, we are only accepting students in the US and you must enroll using a .edu email. We are a beginner-friendly event so beginners are encouraged to apply!</span>
                 <br><br>
                 <span>Register </span>
-                <span class="font-black"><a href="/" target="_blank" style="text-decoration: underline">here</a></span>
+                <span class="font-black"><a href="https://acmcsuf.com/fullybeyond-application" target="_blank" style="text-decoration: underline">here</a></span>
                 <span> and stay tuned for your email confirmation to ensure your registration.</span>
                 <br><br>
             </div>

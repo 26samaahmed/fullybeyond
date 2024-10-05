@@ -47,9 +47,14 @@
 							November 9th - 10th
 					</span>
 					<div class="flex flex-col sm:flex-row justify-center sm:space-x-20 md:space-x-14 mt-16 sm:mt-12">
-							<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out z-20">Apply Now!</button>
-							<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-all duration-700 ease-in-out z-20"><a href='/Assets/Landing/SponsorPackage.pdf' target="_blank">Sponsor Us!</a></button>
+						<button class="text-xl md:text-base mb-2 bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-colors duration-700 ease-in-out z-20">
+							<a href='https://acmcsuf.com/fullybeyond-application' target="_blank">Apply Now!</a>
+						</button>
+						<button class="text-xl md:text-base bg-[#FFE8C5] text-[#A95271] border-2 border-[#E0A246] rounded-3xl w-48 md:w-36 h-14 font-light hover:text-white hover:bg-[#A95271] transition-colors duration-700 ease-in-out z-20">
+							<a href='/Assets/Landing/SponsorPackage.pdf' target="_blank">Sponsor Us!</a>
+						</button>
 					</div>
+					
 			</div>
 			<div class="absolute bg-[#78BFCE] top-64 sm:top-96 md:top-full left-0 w-full z-10">
 					<div class="absolute w-full grid items-center">
@@ -82,7 +87,5 @@
     -webkit-text-stroke: 1.2px rgb(255, 255, 255);
     color: white !important;
 }
-
-
 
 </style>

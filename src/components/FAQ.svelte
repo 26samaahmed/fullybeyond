@@ -4,7 +4,7 @@
 
 <script>
     import { writable } from 'svelte/store';
-    // import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
+    import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
 
 
     let faqs = [
@@ -13,7 +13,7 @@
             to specific challenges within a set timeframe.`},
         
         { id: 2, question: "How do I participate?", 
-            answer: `Visit our registration google form <a href="/" target="_blank" style="text-decoration: underline">here</a> and follow the 
+            answer: `Visit our registration google form <a href="https://acmcsuf.com/fullybeyond-application" target="_blank" style="text-decoration: underline">here</a> and follow the 
             instructions on the form.` },
 
         { id: 3, question: "How do I join the FullyBeyond Discord?", 
@@ -42,11 +42,19 @@
         }
     ];
 
-     // Store to manage open accordion state
-    const openAccordionId = writable(null);
+    let accordions = faqs.map(faq => ({ ...faq, open: false }));
 
     const handleToggle = (id) => {
-        openAccordionId.update(currentId => currentId === id ? null : id);
+        const isCurrentlyOpen = accordions.find(a => a.id === id).open;
+
+        // Update all accordions to ensure only one is open
+        accordions = accordions.map(a => {
+            if (a.id === id) {
+                return { ...a, open: !isCurrentlyOpen };
+            } else {
+                return { ...a, open: false };
+            }
+        });
     }
 </script>
 
@@ -58,13 +66,13 @@
         <div class="content mt-[10vh] sm:mt-[40vh] z-30">
             <h1>FAQ</h1>
             <div class="accordion-container">
-                {#each faqs as { id, question, answer, open }}
+                {#each accordions as { id, question, answer, open }}
                 <div class='questionBox'>
                     <div class='questionHead'>
                         <span class="question">{question}</span>
                     </div>
                     <div class="details">
-                        <p class="answer">{@html answer}</p> <!-- Correct usage of {@html} -->
+                        <p class="answer">{@html answer}</p>
                     </div>
                 </div>
             {/each}
