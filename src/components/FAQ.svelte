@@ -3,7 +3,6 @@
 </svelte:head>
 
 <script>
-    import { writable } from 'svelte/store';
     import Accordion from './Accordion.svelte'; // Assuming you have an Accordion component
 
 
@@ -67,16 +66,16 @@
             <h1>FAQ</h1>
             <div class="accordion-container">
                 {#each accordions as { id, question, answer, open }}
-                <div class='questionBox'>
-                    <div class='questionHead'>
-                        <span class="question">{question}</span>
-                    </div>
-                    <div class="details">
-                        <p class="answer">{@html answer}</p>
-                    </div>
-                </div>
-            {/each}
-            
+                    <Accordion
+                        open={open} 
+                        on:toggle={() => handleToggle(id)}
+                    >
+                        <span class="question" slot="head">{question}</span>
+                        <div slot="details">
+                            <p class="answer">{@html answer}</p>
+                        </div>
+                    </Accordion>
+                {/each}
             </div>
         </div>
         <img class="relative w-screen z-10 bottom-0 pt-32" src="/Assets/FAQ/dirt.webp" alt="floor"/>
@@ -98,6 +97,7 @@
         align-items: center;
         min-height: 100vh;
         background-color: #C2FAE9;
+        /* background: linear-gradient(to bottom, #959A25, #01641C); */
         background-size: cover;
         background-position: center;
     }
@@ -113,6 +113,8 @@
         justify-content: center;
         width: 90%;
         max-width: 1200px;
+        /* margin-top: 20%; */
+        /* margin-top: 50vh; */
         padding: 0 2rem;
     }
 
@@ -138,7 +140,6 @@
         width: 100%;
         max-width: 1200px;
         margin-top: 2rem;
-        margin-bottom: 1rem;
     }
 
     .question {
@@ -146,34 +147,14 @@
         font-weight: bold;
     }
 
-    .questionHead {
-        width: 100%;
-        background-color: white;
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
-        padding: 1rem;
-    }
-
-    .questionBox {
-        margin-bottom: 2rem;
-        width: 100%;
-        background-color: #8ECDB0;
-        padding-bottom: 1rem;
-        border-radius: 2rem;
-    }
-
     .answer {
         font-size: 1.25rem;
         font-weight: normal;
     }
 
-    .details {
-        padding: 1rem;
-    }
-
     @media (max-width: 768px) {
         h1 {
-            font-size: 4rem;
+            font-size: 2.5rem;
             letter-spacing: 0.25rem;
         }
 
