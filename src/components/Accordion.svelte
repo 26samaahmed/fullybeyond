@@ -11,7 +11,7 @@
 
 </script>
 
-<button on:click={handleClick} class="accordion w-full h-full shadow-md m-5">
+<button on:click={handleClick} class="accordion w-full h-full shadow-md mt-5">
     <div class="header h-full w-full flex">
         <div class="text w-full p-4 flex items-center justify-between" style="border-bottom-left-radius: {open ? '0' : '1.5rem'}; border-bottom-right-radius: {open ? '0' : '1.5rem'};">
             <slot name="head"></slot>

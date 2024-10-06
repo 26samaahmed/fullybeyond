@@ -154,8 +154,9 @@
 
     @media (max-width: 768px) {
         h1 {
-            font-size: 2.5rem;
+            font-size: 4rem;
             letter-spacing: 0.25rem;
+            margin-bottom: 0.5rem;
         }
 
         .question {
