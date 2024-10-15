@@ -16,7 +16,7 @@
       { name: 'Yulie Ledesma', role: 'Marketing Officer', image: '/Assets/Team/yulie.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
       { name: 'Tyler Lui', role: 'Web Dev Officer', image: '/Assets/Team/tyler.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
       { name: 'Elzie Mazuca', role: 'Design Officer', image: '/Assets/Team/elzie.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
-      { name: 'Tanishaa Naik', role: 'Marketing Officer', image: '/Assets/Team/tanisha.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
+      { name: 'Tanisha Naik', role: 'Marketing Officer', image: '/Assets/Team/tanisha.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
       { name: 'Oyinkansola Olayinka ', role: 'Web Dev & Marketing Officer', image: '/Assets/Team/ola.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'},
       { name: 'Jeffrey Rivera', role: 'Marketing Officer', image: '/Assets/Team/jeffrey.webp', leafImageLeft: '/Assets/Team/left_leaf.png', leafImageRight: '/Assets/Team/right_leaf.png'}
     ];
